@@ -5,99 +5,112 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen flex flex-col justify-center pt-24 pb-20 md:pt-32 md:pb-28 px-5 md:px-8 bg-gradient-to-br from-slate-50 via-white to-teal-50/40"
+      className="relative w-full min-h-screen flex flex-col justify-center pt-24 pb-0 md:pt-32 px-5 md:px-8 bg-gradient-to-br from-slate-50 via-white to-teal-50/40 overflow-hidden"
     >
-      {/* Subtle decorative shapes */}
+      {/* Decorative blurs */}
       <div
         aria-hidden="true"
-        className="absolute top-0 right-0 w-80 h-80 bg-teal-100/30 rounded-full blur-3xl pointer-events-none"
+        className="absolute top-0 right-0 w-96 h-96 bg-teal-100/25 rounded-full blur-3xl pointer-events-none"
       />
       <div
         aria-hidden="true"
-        className="absolute bottom-10 left-0 w-64 h-64 bg-blue-50/40 rounded-full blur-3xl pointer-events-none"
+        className="absolute bottom-40 left-0 w-80 h-80 bg-blue-50/30 rounded-full blur-3xl pointer-events-none"
       />
 
-      <div className="relative max-w-4xl mx-auto w-full">
-        {/* Overline badge */}
-        <div className="inline-flex items-center gap-2 mb-6">
-          <div className="w-8 h-px bg-teal-600" />
-          <span className="text-teal-700 text-sm font-semibold tracking-widest uppercase">
-            12-Week Home Recovery Program
+      <div className="relative max-w-5xl mx-auto w-full pb-16 md:pb-24">
+        {/* Eyebrow */}
+        <div className="inline-flex items-center gap-2.5 mb-8">
+          <div className="w-6 h-px bg-teal-600" />
+          <span className="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">
+            {hero.eyebrow}
           </span>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
-          {hero.headline}
-        </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Left column — text */}
+          <div>
+            {/* Headline — split on \n for visual line break */}
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-7">
+              {hero.headline.split("\n").map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i < hero.headline.split("\n").length - 1 && <br />}
+                </span>
+              ))}
+            </h1>
 
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-6 max-w-2xl font-light italic">
-          {hero.subheadline}
-        </p>
+            {/* Subheadline */}
+            <p className="text-lg md:text-xl text-teal-800 leading-relaxed mb-5 font-medium border-l-2 border-teal-400 pl-4">
+              {hero.subheadline}
+            </p>
 
-        {/* Body */}
-        <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl">
-          {hero.body}
-        </p>
+            {/* Body */}
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-10">
+              {hero.body}
+            </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3 mb-8">
-          <CTAButton label={hero.primaryCTA} variant="primary" />
-          <CTAButton label={hero.secondaryCTA} variant="secondary" />
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-3 mb-7">
+              <a
+                href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
+                className="inline-flex items-center justify-center bg-teal-700 hover:bg-teal-800 active:bg-teal-900 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-md hover:shadow-lg text-base"
+              >
+                {hero.primaryCTA}
+              </a>
+              <CTAButton label={hero.secondaryCTA} variant="secondary" />
+            </div>
+
+            {/* Trust line */}
+            <p className="text-sm text-slate-400 leading-relaxed tracking-wide">
+              {hero.trustLine}
+            </p>
+          </div>
+
+          {/* Right column — stat panel */}
+          <div className="hidden lg:block">
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-8">
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">
+                At a glance
+              </p>
+              <div className="grid grid-cols-2 gap-6">
+                {hero.stats.map((stat, i) => (
+                  <div key={i} className="flex flex-col">
+                    <span className="text-4xl font-bold text-teal-700 leading-none mb-1.5">
+                      {stat.value}
+                    </span>
+                    <span className="text-sm text-slate-500 leading-snug">{stat.label}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Mini checklist */}
+              <div className="mt-8 pt-7 border-t border-slate-100 flex flex-col gap-3">
+                {[
+                  "For stroke survivors at any stage",
+                  "Follows formal rehab — or restarts it",
+                  "Designed around neuroplasticity principles",
+                  "Complements medical care",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-2.5">
+                    <div className="w-4 h-4 rounded-full bg-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg viewBox="0 0 10 8" className="w-2.5 h-2 fill-white" aria-hidden="true">
+                        <path d="M1 4l2.5 2.5L9 1" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <span className="text-sm text-slate-600 leading-snug">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* Trust line */}
-        <p className="text-sm text-slate-500 leading-relaxed">{hero.trustLine}</p>
-
-        {/* Decorative divider */}
-        <div
-          aria-hidden="true"
-          className="mt-14 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"
-        />
       </div>
 
-      {/* Abstract visual — replace with real image by adding an img tag here */}
+      {/* Bottom gradient fade to next section */}
       <div
         aria-hidden="true"
-        className="hidden lg:flex absolute right-8 xl:right-16 bottom-16 w-72 xl:w-80 h-72 xl:h-80 rounded-2xl overflow-hidden bg-gradient-to-br from-teal-100 to-blue-100 opacity-60 items-center justify-center"
-      >
-        <NeuroplasticityIllustration />
-      </div>
+        className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50/80 to-transparent pointer-events-none"
+      />
     </section>
-  );
-}
-
-function NeuroplasticityIllustration() {
-  return (
-    <svg
-      viewBox="0 0 200 200"
-      className="w-40 h-40 text-teal-500"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      {/* Simplified abstract circles representing neural network */}
-      <circle cx="100" cy="100" r="60" opacity="0.3" />
-      <circle cx="100" cy="100" r="40" opacity="0.5" />
-      <circle cx="100" cy="100" r="20" opacity="0.8" />
-      {/* Connection lines */}
-      <line x1="100" y1="40" x2="100" y2="160" opacity="0.4" />
-      <line x1="40" y1="100" x2="160" y2="100" opacity="0.4" />
-      <line x1="58" y1="58" x2="142" y2="142" opacity="0.3" />
-      <line x1="142" y1="58" x2="58" y2="142" opacity="0.3" />
-      {/* Nodes */}
-      <circle cx="100" cy="40" r="5" fill="currentColor" opacity="0.7" />
-      <circle cx="160" cy="100" r="5" fill="currentColor" opacity="0.7" />
-      <circle cx="100" cy="160" r="5" fill="currentColor" opacity="0.7" />
-      <circle cx="40" cy="100" r="5" fill="currentColor" opacity="0.7" />
-      <circle cx="142" cy="58" r="4" fill="currentColor" opacity="0.5" />
-      <circle cx="142" cy="142" r="4" fill="currentColor" opacity="0.5" />
-      <circle cx="58" cy="142" r="4" fill="currentColor" opacity="0.5" />
-      <circle cx="58" cy="58" r="4" fill="currentColor" opacity="0.5" />
-    </svg>
   );
 }
