@@ -44,19 +44,28 @@ export const founder = {
 // ---- HERO SECTION ----
 export const hero = {
   eyebrow: "12-Week Guided Home Recovery Program",
-  headline: "You've Survived a Stroke.\nNow You Need a Plan.",
+  headline: "What do you do when rehab ends,\nbut recovery doesn't?",
   subheadline:
-    "Most people leave rehab knowing they should keep working on recovery — but without a clear system to follow at home. This program provides that system.",
+    "A structured 12-week program that helps stroke survivors continue recovery at home — with clarity, consistency, and real guidance.",
+  supportingLine: "No guesswork. No random exercises. Just a clear path forward.",
   body: "The Stroke Comeback Protocol is a 12-week guided neuroplasticity program that gives stroke survivors and their families a practical, evidence-informed daily framework — so recovery has structure, purpose, and forward momentum.",
+  trustBar: "12-week guided program  •  20 chapters  •  100 lessons  •  Lifetime access  •  Designed to complement medical care",
   trustLine: "12-week guided program  •  Lifelong access  •  Designed to complement medical care",
-  primaryCTA: "Enroll Now — $997",
-  secondaryCTA: "See What's Included",
+  primaryCTA: "Start the Program",
+  secondaryCTA: "View Full Program",
   stats: [
     { value: "12", label: "Structured weeks" },
     { value: "4", label: "Phases of recovery" },
     { value: "12", label: "Live group calls" },
     { value: "∞", label: "Lifelong access" },
   ],
+};
+
+// ---- MID-PAGE CTA (shown after Problem, Program, and Benefits) ----
+export const midCTA = {
+  headline: "Start your recovery with a clear plan",
+  primaryCTA: "Start the Program",
+  urgencyLine: "You can start today and go at your own pace.",
 };
 
 // ---- PROBLEM SECTION ----
@@ -243,57 +252,64 @@ export const program = {
 export const deliverables = {
   headline: "Everything included in the program",
   intro: "One investment. Everything you need to follow the program from start to finish — and beyond.",
+  microCommitment: {
+    label: "See if this is right for you",
+    button: "Explore the Program",
+  },
   groups: [
     {
-      label: "Live Support",
+      label: "Guidance",
       items: [
         {
           title: "12 weekly live group calls",
           detail: "Join each week's session to ask questions, get guidance, and stay on track.",
         },
         {
-          title: "Personalised onboarding call",
-          detail: "Start with a one-to-one session to understand where you are and set the right goals.",
-        },
-        {
-          title: "Email support throughout",
-          detail: "Questions between sessions can be submitted directly for a considered response.",
-        },
-      ],
-    },
-    {
-      label: "Core Content",
-      items: [
-        {
-          title: "Video lessons for every module",
-          detail: "Structured video content covering each week's focus — watch at your own pace.",
-        },
-        {
-          title: "Audio lessons for flexible learning",
-          detail: "Listen while moving, resting, or away from a screen.",
-        },
-        {
-          title: "Worksheets and PDF guides",
-          detail: "Printable materials for tracking progress and understanding each week's principles.",
-        },
-      ],
-    },
-    {
-      label: "Ongoing Access",
-      items: [
-        {
           title: "Recorded sessions — all 12 weeks",
           detail: "Every live call is recorded. Revisit any session at any time.",
         },
         {
-          title: "Lifelong access to all materials",
-          detail: "The program and all future updates remain available to you indefinitely.",
+          title: "Clear weekly structure",
+          detail: "Each week has a defined focus. No guessing what to do next.",
+        },
+      ],
+    },
+    {
+      label: "Content",
+      items: [
+        {
+          title: "Video lessons",
+          detail: "Structured video content for every module — watch at your own pace.",
+        },
+        {
+          title: "Audio lessons",
+          detail: "Listen while moving, resting, or away from a screen.",
+        },
+        {
+          title: "Worksheets and PDFs",
+          detail: "Printable materials for tracking progress and applying each week's principles.",
+        },
+      ],
+    },
+    {
+      label: "Support",
+      items: [
+        {
+          title: "Email support throughout",
+          detail: "Questions between sessions answered directly and thoughtfully.",
+        },
+        {
+          title: "Lifetime access",
+          detail: "The program and all future updates remain yours indefinitely.",
         },
       ],
     },
   ],
-  price: "$997 USD",
+  price: "$997",
+  priceLabel: "One-time investment",
+  priceSubNote: "Lifetime access  •  No subscription  •  All future updates included",
   priceNote: "One-time investment. Lifelong access. No recurring fees.",
+  urgencyLine: "You can start today and go at your own pace.",
   guarantee: "If you enroll and the program is not right for you, contact us within the first 7 days.",
 };
 

@@ -5,6 +5,7 @@ import { SolutionSection } from "@/sections/SolutionSection";
 import { WhyDifferentSection } from "@/sections/WhyDifferentSection";
 import { WhoItsForSection } from "@/sections/WhoItsForSection";
 import { ProgramSection } from "@/sections/ProgramSection";
+import { InlineCTASection } from "@/sections/InlineCTASection";
 import { DeliverablesSection } from "@/sections/DeliverablesSection";
 import { BenefitsSection } from "@/sections/BenefitsSection";
 import { FAQSection } from "@/sections/FAQSection";
@@ -19,12 +20,15 @@ function App() {
       <main>
         <HeroSection />
         <ProblemSection />
+        <InlineCTASection />
         <SolutionSection />
         <WhyDifferentSection />
         <WhoItsForSection />
         <ProgramSection />
+        <InlineCTASection />
         <DeliverablesSection />
         <BenefitsSection />
+        <InlineCTASection />
         <FAQSection />
         <FounderSection />
         <FinalCTASection />

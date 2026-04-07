@@ -1,0 +1,137 @@
+Improve the landing page to increase conversions and make it feel more premium and actionable.
+
+Make the following exact changes:
+
+1. HERO SECTION IMPROVEMENT
+
+Update the hero to:
+
+Headline:
+"What do you do when rehab ends, but recovery doesn’t?"
+
+Subheadline:
+"A structured 12-week program that helps stroke survivors continue recovery at home — with clarity, consistency, and real guidance."
+
+Add a short supporting line under:
+"No guesswork. No random exercises. Just a clear path forward."
+
+Primary CTA button:
+Change text to: "Start the Program"
+
+Add a secondary smaller CTA:
+"View Full Program"
+
+Make the CTA button more visually prominent (strong contrast color, rounded, clear hover state).
+
+---
+
+2. ADD TRUST ELEMENT UNDER HERO
+
+Add a small trust bar under the CTA:
+
+"12-week guided program • 20 chapters • 100 lessons • Lifetime access • Designed to complement medical care"
+
+Keep it subtle and clean.
+
+---
+
+3. ADD CTA AFTER EVERY MAJOR SECTION
+
+After these sections:
+- Problem section
+- Inside the Program
+- Benefits
+
+Add a CTA block:
+
+Headline:
+"Start your recovery with a clear plan"
+
+Button:
+"Start the Program"
+
+Make sure it scrolls to or links to the Thinkific checkout.
+
+---
+
+4. IMPROVE "WHAT YOU GET" SECTION
+
+Make it more visual and scannable:
+
+Use check icons and spacing.
+
+Group into:
+
+Guidance:
+- 12 weekly live group calls
+- Recorded sessions
+- Clear weekly structure
+
+Content:
+- Video lessons
+- Audio lessons
+- Worksheets and PDFs
+
+Support:
+- Email support
+- Lifetime access
+
+---
+
+5. ADD MICRO-COMMITMENT CTA
+
+Above the price section, add:
+
+"See if this is right for you"
+
+Then a button:
+"Explore the Program"
+
+(This reduces friction before purchase)
+
+---
+
+6. PRICE SECTION IMPROVEMENT
+
+Make the price feel more valuable:
+
+Add:
+
+"One-time investment"
+
+"$997"
+
+Under it:
+
+"Lifetime access • No subscription • All future updates included"
+
+Then CTA button:
+"Start the Program"
+
+---
+
+7. ADD URGENCY WITHOUT HYPE
+
+Add small line under CTA:
+
+"You can start today and go at your own pace."
+
+(No fake countdowns or pressure tactics)
+
+---
+
+8. VISUAL IMPROVEMENT
+
+Increase spacing between sections.
+Make headings slightly larger.
+Improve mobile padding.
+Make buttons consistent across the page.
+
+---
+
+IMPORTANT:
+Keep tone calm, credible, and premium.
+No hype, no miracle claims, no aggressive sales language.
+Make it feel like a high-quality medical-grade program.
+
+Keep all text editable in a central content file.

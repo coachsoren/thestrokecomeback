@@ -1,5 +1,5 @@
 import { hero } from "@/content";
-import { CTAButton } from "@/components/CTAButton";
+import { THINKIFIC_URL } from "@/content";
 
 export function HeroSection() {
   return (
@@ -27,42 +27,46 @@ export function HeroSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left column — text */}
+          {/* Left column — copy */}
           <div>
-            {/* Headline — split on \n for visual line break */}
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-7">
-              {hero.headline.split("\n").map((line, i) => (
+            <h1 className="text-4xl md:text-5xl xl:text-[3.4rem] font-bold text-slate-900 leading-[1.08] tracking-tight mb-6">
+              {hero.headline.split("\n").map((line, i, arr) => (
                 <span key={i}>
                   {line}
-                  {i < hero.headline.split("\n").length - 1 && <br />}
+                  {i < arr.length - 1 && <br />}
                 </span>
               ))}
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-teal-800 leading-relaxed mb-5 font-medium border-l-2 border-teal-400 pl-4">
+            <p className="text-lg md:text-xl text-teal-800 leading-relaxed mb-3 font-medium border-l-2 border-teal-400 pl-4">
               {hero.subheadline}
             </p>
 
-            {/* Body */}
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-10">
-              {hero.body}
+            {/* Supporting line */}
+            <p className="text-base text-slate-500 leading-relaxed mb-10 pl-4 border-l-2 border-transparent">
+              {hero.supportingLine}
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-7">
+            <div className="flex flex-col sm:flex-row gap-3 mb-6">
               <a
-                href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
-                className="inline-flex items-center justify-center bg-teal-700 hover:bg-teal-800 active:bg-teal-900 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-md hover:shadow-lg text-base"
+                href={THINKIFIC_URL}
+                className="inline-flex items-center justify-center bg-teal-700 hover:bg-teal-800 active:bg-teal-900 text-white font-bold px-9 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl text-base tracking-wide"
               >
                 {hero.primaryCTA}
               </a>
-              <CTAButton label={hero.secondaryCTA} variant="secondary" />
+              <a
+                href={THINKIFIC_URL}
+                className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-teal-700 border-2 border-teal-600 hover:border-teal-700 font-semibold px-9 py-4 rounded-xl transition-all text-base"
+              >
+                {hero.secondaryCTA}
+              </a>
             </div>
 
-            {/* Trust line */}
-            <p className="text-sm text-slate-400 leading-relaxed tracking-wide">
-              {hero.trustLine}
+            {/* Trust bar */}
+            <p className="text-xs text-slate-400 leading-relaxed tracking-wide">
+              {hero.trustBar}
             </p>
           </div>
 
@@ -83,7 +87,6 @@ export function HeroSection() {
                 ))}
               </div>
 
-              {/* Mini checklist */}
               <div className="mt-8 pt-7 border-t border-slate-100 flex flex-col gap-3">
                 {[
                   "For stroke survivors at any stage",
@@ -94,7 +97,14 @@ export function HeroSection() {
                   <div key={i} className="flex items-start gap-2.5">
                     <div className="w-4 h-4 rounded-full bg-teal-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg viewBox="0 0 10 8" className="w-2.5 h-2 fill-white" aria-hidden="true">
-                        <path d="M1 4l2.5 2.5L9 1" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                        <path
+                          d="M1 4l2.5 2.5L9 1"
+                          stroke="white"
+                          strokeWidth="1.5"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
                     <span className="text-sm text-slate-600 leading-snug">{item}</span>
@@ -106,7 +116,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom gradient fade to next section */}
       <div
         aria-hidden="true"
         className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50/80 to-transparent pointer-events-none"
