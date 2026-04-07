@@ -19,25 +19,13 @@ export const CONTACT_EMAIL = "hello@strokecomebackprotocol.com"; // Replace with
 export const BRAND_NAME = "The Stroke Comeback Protocol";
 
 // ---- FOUNDER ----
-// =============================================
-// TO ADD FOUNDER CREDENTIALS:
-// Fill in each field below. Empty strings are hidden automatically.
-// founder.name             → Full name, e.g. "Jørgen Olsen" or "Dr. Jane Smith"
-// founder.title            → Primary role, e.g. "Physiotherapist & Neurological Rehabilitation Specialist"
-// founder.qualifications   → Degrees/certs, e.g. "BSc (Hons) Physiotherapy · MSc Neurological Rehabilitation"
-// founder.yearsExperience  → e.g. "15+ years working in neurological rehabilitation"
-// founder.clinicalFocus    → e.g. "Specialising in stroke recovery, neuroplasticity, and motor re-education"
-// founder.mission          → A single sentence on what drives this work, in the founder's own voice
-// founder.headshotSrc      → Uncomment and set path once a real photo is available
-// =============================================
+// To add a real headshot: place the image at
+// artifacts/stroke-comeback/public/images/founder.jpg
+// then uncomment founder.headshotSrc below and update FounderSection.tsx.
 export const founder = {
-  name: "Founder Name",
-  title: "Founder & Lead Clinician",
-  qualifications: "",       // e.g. "BSc Physiotherapy · MSc Neurological Rehabilitation"
-  yearsExperience: "",      // e.g. "15+ years in neurological rehabilitation"
-  clinicalFocus: "",        // e.g. "Specialising in stroke recovery and motor re-education"
-  mission: "",              // e.g. "I built this because I believe every stroke survivor deserves a clear plan."
-  headshotAlt: "Founder of The Stroke Comeback Protocol",
+  name: "Dr. Jörgen Sandell",
+  title: "Clinician & Scientist in Neurological Recovery",
+  headshotAlt: "Dr. Jörgen Sandell, founder of The Stroke Comeback Protocol",
   // headshotSrc: "/images/founder.jpg",  // Uncomment when photo is available
 };
 
@@ -402,6 +390,14 @@ export const founderSection = {
     "What I noticed was that the missing piece was rarely motivation. It was clarity. People were expected to continue their recovery, but many did not know what to prioritise, how to organise their effort, or how to understand what their brain and body were trying to relearn.",
     "This program exists to address that gap. I wanted to create something that connects professional knowledge with everyday life — not isolated theory, and not random exercises, but a practical framework that people can genuinely use week after week, in their own home, on their own terms.",
   ],
+  credentials: [
+    "25+ years of experience in neuromodulation and rehabilitation",
+    "Clinical and scientific background",
+    "Experience in neurological recovery and rehabilitation technology",
+    "Advisor to rehabilitation centres worldwide",
+  ],
+  closingSentence:
+    "My goal is simple: to give stroke survivors a clearer, more practical path forward after rehab.",
 };
 
 // ---- FINAL CTA SECTION ----
