@@ -1,0 +1,99 @@
+Improve the landing page by adding strong trust, credibility, and conversion elements.
+
+Make the following changes:
+
+1. ADD SOCIAL PROOF SECTION
+
+Create a new section before the price section:
+
+Headline:
+"Who this program is helping"
+
+Add 3–4 realistic testimonial-style blocks (no fake claims, no exaggeration):
+
+Example tone:
+
+"I felt stuck after rehab ended. This gave me a clear structure and something to follow every day."
+
+"For the first time, I understood why I was doing each exercise — that changed everything."
+
+"It helped me feel more in control of my recovery again."
+
+"I wish I had something like this earlier."
+
+IMPORTANT:
+- Keep them realistic and grounded
+- No miracle outcomes
+- No medical claims
+- No fake names or overly specific identities
+
+---
+
+2. ADD "WHO THIS IS FOR" SECTION
+
+Place this above the testimonials:
+
+Headline:
+"Who this is for"
+
+Bullet points:
+
+- Stroke survivors who want to continue improving after rehab  
+- People who feel stuck or unsure what to focus on  
+- Those looking for a clear, structured daily approach  
+- Caregivers who want to support recovery in a practical way  
+
+Add small sub-section:
+
+"Not for:"
+- Emergency or acute medical situations  
+- Replacement for medical or therapist-led care  
+- People looking for passive treatment or quick fixes  
+
+---
+
+3. ADD RISK REDUCTION BLOCK
+
+Place this directly above the price:
+
+Headline:
+"Designed to support — not replace — your care"
+
+Text:
+
+"This program is built to complement medical care and rehabilitation.
+
+It provides structure, understanding, and practical daily guidance — but it is not a substitute for professional medical advice or treatment."
+
+Add small reassurance line:
+
+"You can go at your own pace and revisit everything as needed."
+
+---
+
+4. ADD FINAL TRUST CTA SECTION
+
+At the very bottom:
+
+Headline:
+"You don’t need more information.
+You need a clear plan."
+
+Subtext:
+"This program is designed to give you exactly that."
+
+CTA:
+"Start the Program"
+
+---
+
+5. VISUAL IMPROVEMENTS
+
+- Add more whitespace between sections  
+- Make testimonial cards soft and clean  
+- Keep everything calm, premium, and readable  
+- No aggressive colors or hype design  
+
+IMPORTANT:
+Everything must feel credible, safe, and professional.
+No hype, no pressure tactics, no unrealistic promises.

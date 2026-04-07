@@ -4,6 +4,7 @@ import { ProblemSection } from "@/sections/ProblemSection";
 import { SolutionSection } from "@/sections/SolutionSection";
 import { WhyDifferentSection } from "@/sections/WhyDifferentSection";
 import { WhoItsForSection } from "@/sections/WhoItsForSection";
+import { TestimonialsSection } from "@/sections/TestimonialsSection";
 import { ProgramSection } from "@/sections/ProgramSection";
 import { InlineCTASection } from "@/sections/InlineCTASection";
 import { DeliverablesSection } from "@/sections/DeliverablesSection";
@@ -23,9 +24,10 @@ function App() {
         <InlineCTASection />
         <SolutionSection />
         <WhyDifferentSection />
-        <WhoItsForSection />
         <ProgramSection />
         <InlineCTASection />
+        <WhoItsForSection />
+        <TestimonialsSection />
         <DeliverablesSection />
         <BenefitsSection />
         <InlineCTASection />

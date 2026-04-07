@@ -150,21 +150,57 @@ export const whyDifferent = {
 
 // ---- WHO IT'S FOR SECTION ----
 export const whoItsFor = {
-  headline: "Who this program is designed for",
+  headline: "Who this is for",
   included: [
-    "Stroke survivors who want a structured framework to continue recovery at home",
-    "People who feel stuck after formal rehabilitation has ended",
-    "Those managing lingering deficits in mobility, hand function, fatigue, sleep, or confidence",
-    "People willing to commit to guided practice over 12 weeks",
-    "Families and caregivers seeking more clarity on how to support daily recovery",
+    "Stroke survivors who want to continue improving after rehab",
+    "People who feel stuck or unsure what to focus on",
+    "Those looking for a clear, structured daily approach to recovery",
+    "Caregivers who want to support recovery in a practical, informed way",
   ],
   excluded: [
-    "Emergency or acute stroke care — this is not a medical intervention",
-    "A substitute for physician-led rehabilitation or therapy",
-    "People expecting recovery without active daily participation",
-    "Requests for guaranteed outcomes or cure-rate claims",
-    "Anyone unwilling to follow a structured, consistent approach",
+    "Emergency or acute medical situations",
+    "A replacement for medical or therapist-led care",
+    "People looking for passive treatment or quick fixes",
   ],
+};
+
+// ---- TESTIMONIALS ----
+export const testimonials = {
+  headline: "Who this program is helping",
+  items: [
+    {
+      quote:
+        "I felt stuck after rehab ended. This gave me a clear structure and something to follow every day.",
+      attribution: "Program participant",
+    },
+    {
+      quote:
+        "For the first time, I understood why I was doing each exercise — that changed everything.",
+      attribution: "Program participant",
+    },
+    {
+      quote:
+        "It helped me feel more in control of my recovery again.",
+      attribution: "Program participant",
+    },
+    {
+      quote:
+        "I wish I had something like this earlier. It fills the gap that rehab leaves behind.",
+      attribution: "Program participant",
+    },
+  ],
+  disclaimer:
+    "These responses reflect individual experiences. Results vary based on many factors including stroke severity, time since stroke, and personal engagement with the program.",
+};
+
+// ---- RISK REDUCTION BLOCK (shown above price) ----
+export const riskReduction = {
+  headline: "Designed to support — not replace — your care",
+  body: [
+    "This program is built to complement medical care and rehabilitation.",
+    "It provides structure, understanding, and practical daily guidance — but it is not a substitute for professional medical advice or treatment.",
+  ],
+  reassurance: "You can go at your own pace and revisit everything as needed.",
 };
 
 // ---- PROGRAM BREAKDOWN SECTION ----
@@ -402,14 +438,14 @@ export const founderSection = {
 
 // ---- FINAL CTA SECTION ----
 export const finalCTA = {
-  headline: "Recovery needs more than information.\nIt needs a system.",
-  body: "If you or someone you love is looking for a clearer, more structured way forward after stroke, The Stroke Comeback Protocol was built to turn recovery principles into daily, meaningful action.",
-  primaryCTA: "Enroll Now — $997",
-  secondaryCTA: "See Full Program Details",
+  headline: "You don't need more information.\nYou need a clear plan.",
+  body: "This program is designed to give you exactly that.",
+  primaryCTA: "Start the Program",
+  secondaryCTA: "View Full Program",
   trustNotes: [
     "12-week guided program",
     "Live calls every week",
-    "Lifelong access",
+    "Lifetime access",
     "Complements medical care",
   ],
 };

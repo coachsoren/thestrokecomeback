@@ -1,7 +1,7 @@
-import { deliverables } from "@/content";
+import { deliverables, riskReduction } from "@/content";
 import { THINKIFIC_URL } from "@/content";
 import { SectionContainer } from "@/components/SectionContainer";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ShieldCheck } from "lucide-react";
 
 const groupColors: Record<string, string> = {
   Guidance: "bg-teal-50 border-teal-200",
@@ -17,7 +17,7 @@ const groupLabelColors: Record<string, string> = {
 
 export function DeliverablesSection() {
   return (
-    <SectionContainer id="deliverables" background="white" maxWidth="wide">
+    <SectionContainer id="deliverables" background="soft" maxWidth="wide">
       {/* Headline */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
@@ -55,6 +55,24 @@ export function DeliverablesSection() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Risk reduction block */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-7 md:p-8 mb-8 shadow-sm">
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center mt-0.5">
+            <ShieldCheck className="w-5 h-5 text-teal-600" />
+          </div>
+          <div>
+            <h3 className="text-base font-bold text-slate-900 mb-3">{riskReduction.headline}</h3>
+            <div className="flex flex-col gap-2 mb-4">
+              {riskReduction.body.map((para, i) => (
+                <p key={i} className="text-sm text-slate-600 leading-relaxed">{para}</p>
+              ))}
+            </div>
+            <p className="text-sm text-teal-700 font-medium">{riskReduction.reassurance}</p>
+          </div>
+        </div>
       </div>
 
       {/* Micro-commitment prompt */}

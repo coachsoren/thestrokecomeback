@@ -5,19 +5,19 @@ export function FinalCTASection() {
   return (
     <section
       id="final-cta"
-      className="w-full py-20 md:py-28 px-5 md:px-8 bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 text-white relative overflow-hidden"
+      className="w-full py-24 md:py-32 px-5 md:px-8 bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 text-white relative overflow-hidden"
     >
       {/* Decorative */}
       <div
         aria-hidden="true"
-        className="absolute top-0 right-1/4 w-96 h-64 bg-teal-700/15 rounded-full blur-3xl"
+        className="absolute top-0 right-1/4 w-96 h-64 bg-teal-700/15 rounded-full blur-3xl pointer-events-none"
       />
       <div
         aria-hidden="true"
-        className="absolute bottom-0 left-1/4 w-80 h-48 bg-blue-900/20 rounded-full blur-3xl"
+        className="absolute bottom-0 left-1/4 w-80 h-48 bg-blue-900/20 rounded-full blur-3xl pointer-events-none"
       />
 
-      <div className="relative max-w-3xl mx-auto text-center">
+      <div className="relative max-w-2xl mx-auto text-center">
         {/* Eyebrow */}
         <div className="inline-flex items-center gap-2.5 mb-8">
           <div className="w-5 h-px bg-teal-400/60" />
@@ -28,7 +28,7 @@ export function FinalCTASection() {
         </div>
 
         {/* Headline */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-5">
           {finalCTA.headline.split("\n").map((line, i, arr) => (
             <span key={i}>
               {line}
@@ -38,21 +38,23 @@ export function FinalCTASection() {
         </h2>
 
         {/* Body */}
-        <p className="text-lg text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-teal-200 leading-relaxed mb-12">
           {finalCTA.body}
         </p>
 
-        {/* CTAs — clear hierarchy */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
+        {/* Primary CTA only — clear, single action */}
+        <a
+          href={THINKIFIC_URL}
+          className="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-400 active:bg-teal-600 text-white font-bold px-12 py-5 rounded-xl transition-colors shadow-xl hover:shadow-2xl text-lg tracking-wide mb-4"
+        >
+          {finalCTA.primaryCTA}
+        </a>
+
+        {/* Ghost secondary */}
+        <div className="mb-10">
           <a
             href={THINKIFIC_URL}
-            className="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-400 active:bg-teal-600 text-white font-bold px-10 py-4 rounded-lg transition-colors shadow-lg text-base"
-          >
-            {finalCTA.primaryCTA}
-          </a>
-          <a
-            href={THINKIFIC_URL}
-            className="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white/75 hover:text-white border border-white/20 hover:border-white/50 font-medium px-10 py-4 rounded-lg transition-all text-base"
+            className="inline-flex items-center justify-center text-white/60 hover:text-white/90 font-medium text-sm transition-colors underline underline-offset-4"
           >
             {finalCTA.secondaryCTA}
           </a>
@@ -62,7 +64,7 @@ export function FinalCTASection() {
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           {finalCTA.trustNotes.map((note, i) => (
             <span key={i} className="text-sm text-slate-400 flex items-center gap-1.5">
-              <span className="w-1 h-1 rounded-full bg-teal-500 inline-block" />
+              <span className="w-1 h-1 rounded-full bg-teal-500 inline-block" aria-hidden="true" />
               {note}
             </span>
           ))}
