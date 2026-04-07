@@ -80,7 +80,7 @@ export const solution = {
   pillars: [
     {
       icon: "Brain",
-      title: "Neuroplasticity Foundation",
+      title: "Neuroplasticity in Practice",
       description:
         "Learn how the recovering brain changes and why consistent, purposeful repetition is the core mechanism of recovery — explained in everyday language.",
     },
@@ -172,54 +172,71 @@ export const whoItsFor = {
 
 // ---- PROGRAM BREAKDOWN SECTION ----
 export const program = {
-  headline: "What's inside the 12-week program",
-  intro: "Each phase builds on the last. The structure does the thinking — so you can focus on the work.",
+  // Statement shown above the section — large, centered, strong
+  statement: [
+    "Most stroke survivors are not lacking motivation.",
+    "They are lacking a clear plan.",
+  ],
+  // Section headline and intro
+  headline: "Inside the Program",
+  sectionLabel: "Inside the program: how your recovery unfolds",
+  intro: [
+    "This is not a collection of random exercises.",
+    "It's a structured recovery journey that guides you step by step through the systems stroke affects most.",
+    "You don't just learn what to do. You understand what your brain is trying to relearn — and how to support that process.",
+  ],
   phases: [
     {
       number: "01",
-      title: "Foundation",
-      weeks: "Weeks 1–3",
-      summary: "Build the base — understand your brain and establish a consistent daily practice.",
-      items: [
-        "How the recovering brain learns and changes",
-        "Building a sustainable daily routine",
-        "Fundamental movement and motor patterns",
-      ],
+      title: "Understanding what actually happened",
+      body: "You start by understanding stroke at a deeper level. Not just what it is — but what changed in your brain, and why recovery can feel slow, confusing, or unpredictable.",
+      outcome: "This removes fear and replaces it with clarity.",
+      items: [],
     },
     {
       number: "02",
-      title: "Restore Function",
-      weeks: "Weeks 4–6",
-      summary: "Target the areas most affected — mobility, sleep, and physical control.",
-      items: [
-        "Sleep as an active recovery tool",
-        "Walking, balance, and mobility work",
-        "Strength, coordination, and control",
-      ],
+      title: "The science of recovery",
+      body: "You learn how neuroplasticity really works in practice. Not theory — but how to apply it through repetition, movement, and targeted exercises that help the brain rebuild connections.",
+      outcome: "",
+      items: [],
     },
     {
       number: "03",
-      title: "Build Capacity",
-      weeks: "Weeks 7–9",
-      summary: "Expand what's possible — address complexity, fine motor work, and setbacks.",
-      items: [
-        "Managing tension, discomfort, and pain",
-        "Fine motor skills and upper limb work",
-        "Understanding and recovering from setbacks",
-      ],
+      title: "The hidden challenges no one explains",
+      body: "Stroke is not just physical. You'll address the things that often stall recovery — so you can understand why progress sometimes stops, and how to move forward again.",
+      outcome: "",
+      items: ["Fatigue", "Emotional impact", "Cognitive overload"],
     },
     {
       number: "04",
-      title: "Sustain and Thrive",
-      weeks: "Weeks 10–12",
-      summary: "Build independence — create the plan that carries you forward after the program.",
-      items: [
-        "Motivation, consistency, and mindset",
-        "Setting and measuring meaningful goals",
-        "Designing your long-term recovery plan",
-      ],
+      title: "Rebuilding real-world function",
+      body: "Now the focus shifts to action. This is where recovery becomes visible in everyday life.",
+      outcome: "",
+      items: ["Movement and mobility", "Speech and communication", "Coordination and daily function"],
+    },
+    {
+      number: "05",
+      title: "The overlooked recovery factors",
+      body: "Most programs ignore these. You'll learn how to support recovery through areas that often make a bigger difference than people expect.",
+      outcome: "",
+      items: ["Nutrition", "Swallowing", "Sensory and visual systems"],
+    },
+    {
+      number: "06",
+      title: "Bringing it all together",
+      body: "You move from isolated exercises to a structured daily system. By the end, you're not guessing anymore — you have a clear, structured way forward.",
+      outcome: "",
+      items: ["What to do", "How to do it", "How to adjust when things don't work"],
     },
   ],
+  // Closing checklist — 20 chapters / 100 lessons etc
+  highlights: [
+    "20 structured chapters",
+    "100 guided lessons",
+    "Video, audio, and practical walkthroughs",
+    "Designed for real-life application at home",
+  ],
+  closingLine: "By the end, you're not guessing anymore. You have a clear, structured way forward.",
 };
 
 // ---- DELIVERABLES SECTION ----
