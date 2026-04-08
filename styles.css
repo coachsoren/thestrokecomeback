@@ -1,0 +1,41 @@
+/* Base */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; -webkit-font-smoothing: antialiased; }
+
+/* Navbar scroll state — applied via JS */
+#navbar.scrolled {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07);
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* FAQ accordion answer — animated open/close */
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.28s ease, opacity 0.22s ease;
+  opacity: 0;
+}
+.faq-answer.open {
+  max-height: 500px;
+  opacity: 1;
+}
+/* Override Tailwind's .hidden when we animate */
+.faq-answer.animating {
+  display: block !important;
+}
+
+/* FAQ item open state */
+.faq-item.open {
+  border-color: #99f6e4;
+  background-color: rgba(240,253,250,0.4);
+}
+.faq-item.open .faq-num   { color: #0d9488; }
+.faq-item.open .faq-q     { color: #0f766e; }
+.faq-item.open .faq-icon  { background-color: #0f766e; color: #fff; }
+
+/* Mobile menu is shown via JS toggling .hidden on the element */
+
+/* Prevent content from being covered by fixed navbar */
+main { padding-top: 0; }
