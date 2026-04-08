@@ -6,27 +6,24 @@
 // 1. Thinkific purchase link → update THINKIFIC_URL
 // 2. Founder credentials    → update the founder object
 // 3. Contact email          → update CONTACT_EMAIL
-// 4. Brand name             → update BRAND_NAME
 // =============================================
 
 // ---- LINKS ----
-// To change the Thinkific purchase URL, update this single value:
 export const THINKIFIC_URL =
   "https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol";
 
-export const CONTACT_EMAIL = "hello@strokecomebackprotocol.com"; // Replace with real email
+export const CONTACT_EMAIL = "hello@strokecomebackprotocol.com";
 
 export const BRAND_NAME = "The Stroke Comeback Protocol";
 
 // ---- FOUNDER ----
-// To add a real headshot: place the image at
-// artifacts/stroke-comeback/public/images/founder.jpg
-// then uncomment founder.headshotSrc below and update FounderSection.tsx.
+// To add a real headshot: place it at public/images/founder.jpg
+// then uncomment founder.headshotSrc and update FounderSection.tsx.
 export const founder = {
   name: "Dr. Jörgen Sandell",
   title: "Clinician & Scientist in Neurological Recovery",
   headshotAlt: "Dr. Jörgen Sandell, founder of The Stroke Comeback Protocol",
-  // headshotSrc: "/images/founder.jpg",  // Uncomment when photo is available
+  // headshotSrc: "/images/founder.jpg",
 };
 
 // ---- HERO SECTION ----
@@ -36,20 +33,18 @@ export const hero = {
   subheadline:
     "A structured 12-week program that helps stroke survivors continue recovery at home — with clarity, consistency, and real guidance.",
   supportingLine: "No guesswork. No random exercises. Just a clear path forward.",
-  body: "The Stroke Comeback Protocol is a 12-week guided neuroplasticity program that gives stroke survivors and their families a practical, evidence-informed daily framework — so recovery has structure, purpose, and forward momentum.",
   trustBar: "12-week guided program  •  20 chapters  •  100 lessons  •  Lifetime access  •  Designed to complement medical care",
-  trustLine: "12-week guided program  •  Lifelong access  •  Designed to complement medical care",
   primaryCTA: "Start the Program",
   secondaryCTA: "View Full Program",
   stats: [
     { value: "12", label: "Structured weeks" },
-    { value: "4", label: "Phases of recovery" },
+    { value: "20", label: "Chapters" },
     { value: "12", label: "Live group calls" },
-    { value: "∞", label: "Lifelong access" },
+    { value: "∞", label: "Lifetime access" },
   ],
 };
 
-// ---- MID-PAGE CTA (shown after Problem, Program, and Benefits) ----
+// ---- MID-PAGE CTA ----
 export const midCTA = {
   headline: "Start your recovery with a clear plan",
   primaryCTA: "Start the Program",
@@ -59,148 +54,163 @@ export const midCTA = {
 // ---- PROBLEM SECTION ----
 export const problem = {
   headline: "What happens when rehab ends — but recovery doesn't?",
-  intro:
-    "Formal rehabilitation is an important start. But for many stroke survivors, it ends before recovery feels finished.",
-  body: "The challenge after discharge is rarely motivation. It is the absence of structure — no clear daily plan, no way to understand what the brain is trying to relearn, and no system for turning that knowledge into consistent action at home.",
+  intro: "Formal rehabilitation is an important start. But for many survivors, it ends before recovery feels finished.",
+  body: "The challenge after discharge is rarely motivation. It is the absence of structure — no clear daily plan, no way to understand what the brain is trying to relearn, and no system for turning that into consistent action at home.",
   cards: [
     { text: "I want to keep improving, but I don't know what to focus on." },
     { text: "I've been given advice, but never a clear system to follow." },
-    { text: "Progress has slowed and I don't know how to move it forward again." },
+    { text: "Progress has slowed and I don't know how to move it forward." },
     { text: "There's too much conflicting information and not enough direction." },
   ],
 };
 
 // ---- SOLUTION SECTION ----
 export const solution = {
-  headline: "A structured system built around how the brain actually recovers",
-  body: "The Stroke Comeback Protocol translates neuroplasticity principles into a practical, week-by-week framework you can follow at home. Every element is chosen for a reason — and that reason is explained in plain language.",
+  headline: "A system built around how the brain actually recovers",
+  body: "The Stroke Comeback Protocol translates neuroplasticity principles into a practical framework you can follow at home. Every element is chosen for a reason — and that reason is explained in plain language.",
   pillars: [
     {
       icon: "Brain",
       title: "Neuroplasticity in Practice",
       description:
-        "Learn how the recovering brain changes and why consistent, purposeful repetition is the core mechanism of recovery — explained in everyday language.",
+        "How the recovering brain changes — and why consistent, purposeful repetition is the core mechanism of recovery.",
     },
     {
       icon: "Activity",
-      title: "Progressive Movement Training",
+      title: "Progressive Movement",
       description:
-        "Build mobility and strength through structured progressions matched to your current level — not a generic routine.",
+        "Structured progressions for mobility and strength, matched to your current level.",
     },
     {
       icon: "Moon",
       title: "Sleep Restoration",
       description:
-        "Address one of recovery's most overlooked pillars with practical, evidence-informed strategies for more restorative sleep.",
+        "Evidence-informed strategies for more restorative sleep — one of recovery's most overlooked pillars.",
     },
     {
       icon: "Wind",
-      title: "Pain and Tension Management",
+      title: "Pain and Tension",
       description:
-        "Understand and work with post-stroke tension and discomfort — rather than simply managing around it.",
+        "Work with post-stroke tension and discomfort, rather than managing around it.",
     },
     {
       icon: "Heart",
       title: "Motivation and Mindset",
       description:
-        "Build sustainable consistency through grounded, realistic approaches to the emotional side of long-term recovery.",
+        "Grounded, realistic approaches to the emotional side of long-term recovery.",
     },
     {
       icon: "TrendingUp",
       title: "Long-Term Sustainability",
       description:
-        "Leave the 12 weeks with a clear, self-directed recovery plan — one you understand and can maintain independently.",
+        "Leave the 12 weeks with a self-directed plan you understand and can maintain independently.",
     },
   ],
 };
 
 // ---- WHY DIFFERENT SECTION ----
 export const whyDifferent = {
-  headline: "What makes this different from general stroke recovery information",
+  headline: "What makes this different",
   differentiators: [
     {
-      title: "Guided neuroplasticity — not random exercises",
+      title: "Neuroplasticity-based — not random exercises",
       description:
-        "Every session is grounded in how the brain actually learns and rewires. You will understand why you are doing each thing, which makes you more likely to do it.",
+        "Every session is grounded in how the brain learns and rewires. You understand why you are doing each thing.",
     },
     {
-      title: "Built for home — not a clinical setting",
+      title: "Built for home",
       description:
-        "The program is designed around real daily life, not ideal clinical conditions. You do not need special equipment or a professional present.",
+        "Designed around real daily life. No special equipment or professional supervision required.",
     },
     {
       title: "A defined 12-week progression",
       description:
-        "Each week builds on the last. There is no guessing about what to do next — the structure does that work for you.",
+        "Each week builds on the last. There is no guessing about what comes next.",
     },
     {
-      title: "Live group calls with expert guidance",
+      title: "Weekly live calls",
       description:
-        "Weekly calls mean you are not working through this alone. You can ask questions, course-correct, and hear how others are applying the same principles.",
+        "You are not working through this alone. Ask questions, course-correct, and hear from others doing the same.",
     },
     {
-      title: "You will understand the 'why'",
+      title: "The 'why' is always explained",
       description:
-        "Understanding why a practice works makes it easier to stay consistent. This program explains the reasoning, not just the steps.",
+        "When you understand why a practice works, you are more likely to do it — and do it consistently.",
     },
   ],
   quote:
     "The stroke-damaged brain isn't broken — it's hungry for guidance. Every rep, every step, every movement is a signal for rewiring.",
 };
 
-// ---- RECOVERY SYSTEM SECTION ----
-export const recoverySystem = {
-  headline: "A Complete Stroke Recovery System",
-  subtext: "Built from 20 structured modules designed to guide you step by step.",
-  blocks: [
+// ---- PROGRAM BREAKDOWN SECTION ----
+export const program = {
+  statement: [
+    "Most stroke survivors are not lacking motivation.",
+    "They are lacking a clear plan.",
+  ],
+  headline: "A clear, step-by-step recovery structure",
+  sectionLabel: "How your recovery is structured",
+  intro: [
+    "Each phase builds on the last — so you always know what to focus on next.",
+    "You don't just follow exercises. You understand what your brain is trying to relearn and how to support that process.",
+  ],
+  phases: [
     {
       number: "01",
-      title: "Understanding What Happened",
-      description:
-        "Build the foundation by understanding what is actually happening in your brain and body.",
-      modules: [
-        "The brain and stroke explained",
-        "The hidden crisis behind symptoms",
-        "The science of recovery",
-      ],
+      title: "Understanding what actually happened",
+      body: "Start by understanding stroke at a deeper level — what changed in your brain, and why recovery can feel slow, confusing, or unpredictable.",
+      outcome: "This replaces fear with clarity.",
+      items: [],
+      chapters: "Chapters 1–3",
     },
     {
       number: "02",
-      title: "Rebuilding Core Functions",
-      description: "Regain control over your body, thinking, and daily function.",
-      modules: [
-        "Movement and mobility",
-        "Speech and communication",
-        "Cognitive recovery",
-        "Fatigue and energy",
-      ],
+      title: "The science of recovery",
+      body: "Learn how neuroplasticity works in practice — how to apply it through repetition, movement, and targeted exercises that help the brain rebuild connections.",
+      outcome: "",
+      items: [],
+      chapters: "Chapters 4–6",
     },
     {
       number: "03",
-      title: "The Invisible Challenges",
-      description:
-        "Understand and navigate the challenges most rehab programs don't address.",
-      modules: [
-        "Emotional regulation",
-        "Pain and sensory changes",
-        "Vision and perception",
-      ],
+      title: "The hidden challenges",
+      body: "Stroke is not just physical. Address the things that often stall recovery and learn how to move forward again.",
+      outcome: "",
+      items: ["Fatigue", "Emotional impact", "Cognitive overload"],
+      chapters: "Chapters 7–10",
     },
     {
       number: "04",
-      title: "Advanced Recovery and Long-Term Growth",
-      description: "Go beyond recovery — build long-term progress and independence.",
-      modules: [
-        "Strength and daily independence",
-        "Neuroplasticity tools and recovery strategies",
-        "Heat therapy and recovery boosters",
-        "Music and brain stimulation",
-        "Long-term recovery planning",
-        "Learning and skill development",
-      ],
+      title: "Rebuilding real-world function",
+      body: "The focus shifts to action. This is where recovery becomes visible in everyday life.",
+      outcome: "",
+      items: ["Movement and mobility", "Speech and communication", "Coordination and daily function"],
+      chapters: "Chapters 11–14",
+    },
+    {
+      number: "05",
+      title: "The overlooked recovery factors",
+      body: "Most programs ignore these. Learn how to support recovery through areas that often make a bigger difference than expected.",
+      outcome: "",
+      items: ["Nutrition", "Swallowing", "Sensory and visual systems"],
+      chapters: "Chapters 15–17",
+    },
+    {
+      number: "06",
+      title: "Bringing it all together",
+      body: "Move from isolated exercises to a structured daily system — one you understand and can maintain independently.",
+      outcome: "",
+      items: ["What to do", "How to do it", "How to adjust when things don't work"],
+      chapters: "Chapters 18–20",
     },
   ],
-  closingNote: "20 structured chapters  •  100 guided lessons  •  Video, audio, and practical walkthroughs",
+  highlights: [
+    "20 structured chapters",
+    "100 guided lessons",
+    "Video, audio, and practical walkthroughs",
+    "Designed for real-life application at home",
+  ],
+  closingLine: "By the end, you have a clear, structured way forward.",
 };
 
 // ---- WHO IT'S FOR SECTION ----
@@ -209,7 +219,7 @@ export const whoItsFor = {
   included: [
     "Stroke survivors who want to continue improving after rehab",
     "People who feel stuck or unsure what to focus on",
-    "Those looking for a clear, structured daily approach to recovery",
+    "Those looking for a structured daily approach to recovery",
     "Caregivers who want to support recovery in a practical, informed way",
   ],
   excluded: [
@@ -224,197 +234,86 @@ export const testimonials = {
   headline: "Who this program is helping",
   items: [
     {
-      quote:
-        "I felt stuck after rehab ended. This gave me a clear structure and something to follow every day.",
+      quote: "I felt stuck after rehab ended. This gave me a clear structure and something to follow every day.",
       attribution: "Program participant",
     },
     {
-      quote:
-        "For the first time, I understood why I was doing each exercise — that changed everything.",
+      quote: "For the first time, I understood why I was doing each exercise — that changed everything.",
       attribution: "Program participant",
     },
     {
-      quote:
-        "It helped me feel more in control of my recovery again.",
+      quote: "It helped me feel more in control of my recovery again.",
       attribution: "Program participant",
     },
     {
-      quote:
-        "I wish I had something like this earlier. It fills the gap that rehab leaves behind.",
+      quote: "I wish I had something like this earlier. It fills the gap that rehab leaves behind.",
       attribution: "Program participant",
     },
   ],
   disclaimer:
-    "These responses reflect individual experiences. Results vary based on many factors including stroke severity, time since stroke, and personal engagement with the program.",
-};
-
-// ---- RISK REDUCTION BLOCK (shown above price) ----
-export const riskReduction = {
-  headline: "Designed to support — not replace — your care",
-  body: [
-    "This program is built to complement medical care and rehabilitation.",
-    "It provides structure, understanding, and practical daily guidance — but it is not a substitute for professional medical advice or treatment.",
-  ],
-  reassurance: "You can go at your own pace and revisit everything as needed.",
-};
-
-// ---- PROGRAM BREAKDOWN SECTION ----
-export const program = {
-  // Statement shown above the section — large, centered, strong
-  statement: [
-    "Most stroke survivors are not lacking motivation.",
-    "They are lacking a clear plan.",
-  ],
-  // Section headline and intro
-  headline: "Inside the Program",
-  sectionLabel: "Inside the program: how your recovery unfolds",
-  intro: [
-    "This is not a collection of random exercises.",
-    "It's a structured recovery journey that guides you step by step through the systems stroke affects most.",
-    "You don't just learn what to do. You understand what your brain is trying to relearn — and how to support that process.",
-  ],
-  phases: [
-    {
-      number: "01",
-      title: "Understanding what actually happened",
-      body: "You start by understanding stroke at a deeper level. Not just what it is — but what changed in your brain, and why recovery can feel slow, confusing, or unpredictable.",
-      outcome: "This removes fear and replaces it with clarity.",
-      items: [],
-    },
-    {
-      number: "02",
-      title: "The science of recovery",
-      body: "You learn how neuroplasticity really works in practice. Not theory — but how to apply it through repetition, movement, and targeted exercises that help the brain rebuild connections.",
-      outcome: "",
-      items: [],
-    },
-    {
-      number: "03",
-      title: "The hidden challenges no one explains",
-      body: "Stroke is not just physical. You'll address the things that often stall recovery — so you can understand why progress sometimes stops, and how to move forward again.",
-      outcome: "",
-      items: ["Fatigue", "Emotional impact", "Cognitive overload"],
-    },
-    {
-      number: "04",
-      title: "Rebuilding real-world function",
-      body: "Now the focus shifts to action. This is where recovery becomes visible in everyday life.",
-      outcome: "",
-      items: ["Movement and mobility", "Speech and communication", "Coordination and daily function"],
-    },
-    {
-      number: "05",
-      title: "The overlooked recovery factors",
-      body: "Most programs ignore these. You'll learn how to support recovery through areas that often make a bigger difference than people expect.",
-      outcome: "",
-      items: ["Nutrition", "Swallowing", "Sensory and visual systems"],
-    },
-    {
-      number: "06",
-      title: "Bringing it all together",
-      body: "You move from isolated exercises to a structured daily system. By the end, you're not guessing anymore — you have a clear, structured way forward.",
-      outcome: "",
-      items: ["What to do", "How to do it", "How to adjust when things don't work"],
-    },
-  ],
-  // Closing checklist — 20 chapters / 100 lessons etc
-  highlights: [
-    "20 structured chapters",
-    "100 guided lessons",
-    "Video, audio, and practical walkthroughs",
-    "Designed for real-life application at home",
-  ],
-  closingLine: "By the end, you're not guessing anymore. You have a clear, structured way forward.",
+    "These responses reflect individual experiences. Results vary based on stroke severity, time since stroke, and personal engagement with the program.",
 };
 
 // ---- DELIVERABLES SECTION ----
 export const deliverables = {
-  headline: "Everything included in the program",
-  intro: "One investment. Everything you need to follow the program from start to finish — and beyond.",
-  microCommitment: {
-    label: "See if this is right for you",
-    button: "Explore the Program",
-  },
-  groups: [
+  headline: "Everything you need to follow the program",
+  intro: "One investment. All the tools, content, and support to complete the full 12 weeks — and beyond.",
+  items: [
     {
-      label: "Guidance",
-      items: [
-        {
-          title: "12 weekly live group calls",
-          detail: "Join each week's session to ask questions, get guidance, and stay on track.",
-        },
-        {
-          title: "Recorded sessions — all 12 weeks",
-          detail: "Every live call is recorded. Revisit any session at any time.",
-        },
-        {
-          title: "Clear weekly structure",
-          detail: "Each week has a defined focus. No guessing what to do next.",
-        },
-      ],
+      title: "Structured video lessons for each phase",
+      detail: "Watch at your own pace, revisit any time.",
     },
     {
-      label: "Content",
-      items: [
-        {
-          title: "Video lessons",
-          detail: "Structured video content for every module — watch at your own pace.",
-        },
-        {
-          title: "Audio lessons",
-          detail: "Listen while moving, resting, or away from a screen.",
-        },
-        {
-          title: "Worksheets and PDFs",
-          detail: "Printable materials for tracking progress and applying each week's principles.",
-        },
-      ],
+      title: "Audio versions for flexible learning",
+      detail: "Listen while moving, resting, or away from a screen.",
     },
     {
-      label: "Support",
-      items: [
-        {
-          title: "Email support throughout",
-          detail: "Questions between sessions answered directly and thoughtfully.",
-        },
-        {
-          title: "Lifetime access",
-          detail: "The program and all future updates remain yours indefinitely.",
-        },
-      ],
+      title: "Worksheets to track your progress",
+      detail: "Printable materials for applying and monitoring each week's work.",
+    },
+    {
+      title: "Weekly live calls for guidance",
+      detail: "Ask questions, stay on track, and hear how others are progressing.",
+    },
+    {
+      title: "Recorded sessions — all 12 weeks",
+      detail: "Every live call is recorded and available to revisit.",
+    },
+    {
+      title: "Lifetime access",
+      detail: "The program and all future updates remain yours indefinitely.",
     },
   ],
   price: "$997",
   priceLabel: "One-time investment",
   priceSubNote: "Lifetime access  •  No subscription  •  All future updates included",
-  priceNote: "One-time investment. Lifelong access. No recurring fees.",
   urgencyLine: "You can start today and go at your own pace.",
   guarantee: "If you enroll and the program is not right for you, contact us within the first 7 days.",
 };
 
 // ---- BENEFITS SECTION ----
 export const benefits = {
-  headline: "What participants are really looking for",
+  headline: "What participants are looking for",
   items: [
     {
       title: "Confidence in what to do each day",
       description: "Wake up with a clear focus — no longer having to figure out where to begin.",
     },
     {
-      title: "A sense of continuation, not abandonment",
-      description: "Recovery structured to pick up where formal rehab left off — not leave you on your own.",
+      title: "Continuation, not abandonment",
+      description: "Recovery that picks up where formal rehab left off.",
     },
     {
-      title: "One clear framework to follow",
-      description: "Replace scattered advice and conflicting information with a single coherent system.",
+      title: "One framework to follow",
+      description: "Replace scattered advice with a single coherent system.",
     },
     {
-      title: "Visible progress — even the small kind",
+      title: "Visible progress",
       description: "Structure and tracking make improvement legible, even when it feels slow.",
     },
     {
       title: "Support when motivation is hard",
-      description: "Weekly live calls and structured guidance that keep recovery moving during difficult periods.",
+      description: "Weekly calls and structured guidance keep recovery moving during difficult periods.",
     },
     {
       title: "Hope with a rational foundation",
@@ -426,48 +325,47 @@ export const benefits = {
 // ---- FAQ SECTION ----
 export const faq = {
   headline: "Common questions",
-  intro:
-    "These are questions we hear often. If yours is not here, reach out directly.",
+  intro: "These are questions we hear often. If yours is not here, reach out directly.",
   items: [
     {
       question: "Is it too late for me to improve?",
       answer:
-        "Not necessarily. While the early months after stroke involve the most rapid change, recovery does not have a fixed endpoint. The brain retains its capacity for change throughout life — a property known as neuroplasticity. Many people make meaningful progress well beyond the acute phase when they have the right structure, repetition, and support.",
+        "Not necessarily. The brain retains its capacity for change throughout life — neuroplasticity. Many people make meaningful progress well beyond the acute phase when they have the right structure, repetition, and support.",
     },
     {
       question: "My stroke was several years ago. Is this still relevant?",
       answer:
-        "Yes. A long plateau does not always mean recovery has stopped — it often means the right framework has been missing. This program is specifically designed to help people re-engage with recovery in a purposeful, structured way, regardless of how much time has passed since the stroke.",
+        "Yes. A long plateau often means the right framework has been missing, not that recovery has stopped. This program is designed to help people re-engage with recovery purposefully, regardless of how much time has passed.",
     },
     {
       question: "What if I am very limited physically?",
       answer:
-        "The program works from where you are, not from a fixed starting point. The goal is not to compare your progress to anyone else's. It is to build practical, adaptable improvement based on your current capacity — and to understand the principles behind what you are doing.",
+        "The program works from where you are, not from a fixed starting point. The goal is practical, adaptable improvement based on your current capacity.",
     },
     {
       question: "I completed rehabilitation. Can I still join?",
       answer:
-        "Many participants join specifically because formal rehab ended before they felt ready. This program is designed to complement appropriate clinical care by providing continued structure, explanation, and follow-through at home. It is not a clinical service — it is a guided continuation.",
+        "Many participants join because formal rehab ended before they felt ready. This program provides continued structure and follow-through at home — it is not a clinical service, but a guided continuation.",
     },
     {
       question: "What if fatigue is a significant problem for me?",
       answer:
-        "Fatigue is one of the most common challenges after stroke, and the program accounts for it. This is not about intensity — it is about pacing, consistency, and working intelligently within your current capacity. The program includes specific content on managing fatigue as part of the recovery process.",
+        "Fatigue is one of the most common challenges after stroke, and the program accounts for it. This is about pacing and working intelligently within your current capacity — not intensity.",
     },
     {
       question: "I have no background in neuroscience. Will I understand this?",
       answer:
-        "Completely. The program explains how the brain recovers in plain, practical language — no prior knowledge required. The goal is to help you understand what you are doing and why, so that you can apply it with confidence.",
+        "Completely. Everything is explained in plain, practical language. No prior knowledge required.",
     },
     {
-      question: "Why would I pay for this when there is free information available online?",
+      question: "Why would I pay for this when there is free information online?",
       answer:
-        "Free information has real value. The problem is that it is usually scattered, inconsistent, and difficult to turn into a coherent daily plan. This program provides structure, sequencing, live guidance, and a framework that connects everything — saving you the work of piecing it together yourself.",
+        "Free information is usually scattered and hard to turn into a daily plan. This program provides structure, sequencing, and live guidance — saving you the work of piecing it together yourself.",
     },
     {
-      question: "Is this a substitute for medical care or professional therapy?",
+      question: "Is this a substitute for medical care or therapy?",
       answer:
-        "No — and this is important. The Stroke Comeback Protocol is an educational and guided recovery support program. It is designed to work alongside medical care, rehabilitation, and the advice of your doctor or therapist. It does not replace any of those services, and it is not an emergency or acute stroke treatment.",
+        "No. This program is designed to work alongside medical care and rehabilitation — not replace it. It is not an emergency or acute stroke treatment.",
     },
   ],
 };
@@ -477,9 +375,9 @@ export const founderSection = {
   headline: "Created to bridge the gap between rehab and real life",
   credentialLabel: "About the creator",
   body: [
-    "The Stroke Comeback Protocol grew out of something I observed repeatedly in practice: stroke survivors received a period of formal rehabilitation — and then, often, the structure simply stopped. Many were left feeling that the rest was up to them, without enough explanation, guidance, or a clear plan to follow at home.",
-    "What I noticed was that the missing piece was rarely motivation. It was clarity. People were expected to continue their recovery, but many did not know what to prioritise, how to organise their effort, or how to understand what their brain and body were trying to relearn.",
-    "This program exists to address that gap. I wanted to create something that connects professional knowledge with everyday life — not isolated theory, and not random exercises, but a practical framework that people can genuinely use week after week, in their own home, on their own terms.",
+    "The Stroke Comeback Protocol grew out of something I observed repeatedly: stroke survivors received rehabilitation, and then the structure simply stopped. Many were left to figure out the rest on their own — without enough explanation, or a clear plan.",
+    "The missing piece was rarely motivation. It was clarity. People were expected to continue their recovery but didn't know what to prioritise, how to organise their effort, or how to understand what their brain was trying to relearn.",
+    "This program exists to address that gap — connecting professional knowledge with everyday life in a way people can genuinely use, week after week, at home.",
   ],
   credentials: [
     "25+ years of experience in neuromodulation and rehabilitation",
@@ -493,18 +391,38 @@ export const founderSection = {
 
 // ---- FINAL CTA SECTION ----
 export const finalCTA = {
-  headline: "You don't need more information.\nYou need a clear plan.",
-  body: "This program is designed to give you exactly that.",
+  headline: "You've tried to figure this out on your own.\nNow you have a clear plan to follow.",
+  body: [
+    "Rehab gives you a starting point. But what comes after is often unclear — and that's where many people get stuck.",
+    "This program is built to give you structure, clarity, and a path forward you can actually follow.",
+  ],
+  nextSteps: [
+    "Get instant access",
+    "Start with Phase 1 today",
+    "Follow a clear daily structure",
+    "Join your first live session",
+  ],
   primaryCTA: "Start the Program",
-  secondaryCTA: "View Full Program",
+  subline: "Know exactly what to do, starting tomorrow.",
   trustNotes: [
     "12-week guided program",
-    "Live calls every week",
+    "Weekly live calls",
     "Lifetime access",
     "Complements medical care",
   ],
 };
 
+// ---- RISK REDUCTION (above price) ----
+export const riskReduction = {
+  headline: "Designed to support — not replace — your care",
+  body: [
+    "This program is built to complement medical care and rehabilitation.",
+    "It provides structure and practical daily guidance — not a substitute for professional medical advice or treatment.",
+  ],
+  reassurance: "You can go at your own pace and revisit everything as needed.",
+};
+
 // ---- DISCLAIMER ----
+// Shown in the footer only.
 export const disclaimer =
   "This program is intended as an educational and guided recovery support resource. It is designed to complement, not replace, medical care, rehabilitation, or advice from your physician or therapist. It is not an emergency or acute stroke treatment. Individual outcomes will vary.";

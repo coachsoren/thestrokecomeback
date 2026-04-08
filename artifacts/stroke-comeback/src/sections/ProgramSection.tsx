@@ -4,7 +4,7 @@ import { SectionContainer } from "@/components/SectionContainer";
 export function ProgramSection() {
   return (
     <>
-      {/* ── Statement block ───────────────────────────────────────── */}
+      {/* Statement block */}
       <section
         id="program-statement"
         className="w-full py-20 md:py-28 px-5 md:px-8 bg-white text-center"
@@ -15,7 +15,7 @@ export function ProgramSection() {
               key={i}
               className={
                 i === 0
-                  ? "text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-700 leading-snug mb-3"
+                  ? "text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-600 leading-snug mb-3"
                   : "text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 leading-snug"
               }
             >
@@ -25,31 +25,22 @@ export function ProgramSection() {
         </div>
       </section>
 
-      {/* ── Program section ───────────────────────────────────────── */}
+      {/* Program section */}
       <SectionContainer id="program" background="soft" maxWidth="default">
-        {/* Section label + headline */}
-        <div className="mb-12">
+        {/* Label + headline */}
+        <div className="mb-10">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-6 h-px bg-teal-500" />
             <span className="text-xs font-semibold text-teal-700 uppercase tracking-widest">
               {program.sectionLabel}
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-6">
             {program.headline}
           </h2>
-
-          {/* Intro paragraphs */}
-          <div className="flex flex-col gap-3 max-w-2xl">
+          <div className="flex flex-col gap-2 max-w-2xl">
             {program.intro.map((para, i) => (
-              <p
-                key={i}
-                className={
-                  i === 0
-                    ? "text-base md:text-lg text-slate-600 leading-relaxed font-medium"
-                    : "text-base md:text-lg text-slate-600 leading-relaxed"
-                }
-              >
+              <p key={i} className="text-base md:text-lg text-slate-600 leading-relaxed">
                 {para}
               </p>
             ))}
@@ -58,7 +49,6 @@ export function ProgramSection() {
 
         {/* Phases — vertical list */}
         <div className="relative flex flex-col gap-0">
-          {/* Vertical connector line */}
           <div
             aria-hidden="true"
             className="absolute top-5 bottom-5 left-[1.1rem] w-px bg-teal-100 hidden md:block"
@@ -67,35 +57,29 @@ export function ProgramSection() {
           {program.phases.map((phase, i) => (
             <div
               key={i}
-              className="relative flex gap-6 md:gap-8 py-8 border-b border-slate-100 last:border-0 group"
+              className="relative flex gap-6 md:gap-8 py-7 border-b border-slate-100 last:border-0 group"
             >
-              {/* Phase number bubble */}
-              <div className="flex-shrink-0 flex flex-col items-center">
+              {/* Number bubble */}
+              <div className="flex-shrink-0">
                 <div className="w-9 h-9 rounded-full bg-teal-700 group-hover:bg-teal-600 transition-colors flex items-center justify-center shadow-sm z-10 relative">
                   <span className="text-white text-xs font-bold">{phase.number}</span>
                 </div>
               </div>
 
-              {/* Phase content */}
+              {/* Content */}
               <div className="flex-1 min-w-0 pb-1">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-snug mb-3">
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-snug mb-2">
                   Phase {phase.number}: {phase.title}
                 </h3>
 
-                <p className="text-slate-600 text-base leading-relaxed mb-3">
-                  {phase.body}
-                </p>
+                <p className="text-slate-600 text-base leading-relaxed mb-3">{phase.body}</p>
 
-                {/* Outcome line */}
                 {phase.outcome && (
-                  <p className="text-teal-700 font-medium text-sm mb-3 italic">
-                    {phase.outcome}
-                  </p>
+                  <p className="text-teal-700 font-medium text-sm italic mb-3">{phase.outcome}</p>
                 )}
 
-                {/* Bullet items */}
                 {phase.items.length > 0 && (
-                  <ul className="flex flex-col gap-1.5 mt-3">
+                  <ul className="flex flex-col gap-1.5 mb-3">
                     {phase.items.map((item, j) => (
                       <li key={j} className="flex items-center gap-2.5">
                         <div className="w-1.5 h-1.5 rounded-full bg-teal-400 flex-shrink-0" />
@@ -104,15 +88,20 @@ export function ProgramSection() {
                     ))}
                   </ul>
                 )}
+
+                {/* Chapter reference */}
+                <span className="inline-block text-xs font-semibold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-md mt-1">
+                  {phase.chapters}
+                </span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Closing panel — highlights + closing line */}
-        <div className="mt-12 bg-white border border-teal-100 rounded-2xl p-7 md:p-8 shadow-sm">
+        {/* Closing panel */}
+        <div className="mt-10 bg-white border border-teal-100 rounded-2xl p-7 md:p-8 shadow-sm">
           <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-5">
-            This is why the program works
+            Inside the program
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-7">
             {program.highlights.map((item, i) => (
@@ -135,7 +124,7 @@ export function ProgramSection() {
               </div>
             ))}
           </div>
-          <div className="border-t border-slate-100 pt-6">
+          <div className="border-t border-slate-100 pt-5">
             <p className="text-base md:text-lg font-semibold text-slate-800 leading-snug">
               {program.closingLine}
             </p>

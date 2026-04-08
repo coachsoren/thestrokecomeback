@@ -3,21 +3,9 @@ import { THINKIFIC_URL } from "@/content";
 import { SectionContainer } from "@/components/SectionContainer";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 
-const groupColors: Record<string, string> = {
-  Guidance: "bg-teal-50 border-teal-200",
-  Content: "bg-blue-50 border-blue-200",
-  Support: "bg-slate-50 border-slate-200",
-};
-
-const groupLabelColors: Record<string, string> = {
-  Guidance: "text-teal-700 bg-teal-100",
-  Content: "text-blue-700 bg-blue-100",
-  Support: "text-slate-600 bg-slate-200",
-};
-
 export function DeliverablesSection() {
   return (
-    <SectionContainer id="deliverables" background="soft" maxWidth="wide">
+    <SectionContainer id="deliverables" background="white" maxWidth="default">
       {/* Headline */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
@@ -28,46 +16,35 @@ export function DeliverablesSection() {
         </p>
       </div>
 
-      {/* Grouped deliverables */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
-        {deliverables.groups.map((group) => (
+      {/* Two-column checklist */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+        {deliverables.items.map((item, i) => (
           <div
-            key={group.label}
-            className={`rounded-2xl border p-6 ${groupColors[group.label] ?? "bg-slate-50 border-slate-200"}`}
+            key={i}
+            className="flex items-start gap-3 bg-slate-50 border border-slate-100 rounded-xl p-4"
           >
-            <span
-              className={`inline-block text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-md mb-5 ${groupLabelColors[group.label] ?? "text-slate-600 bg-slate-200"}`}
-            >
-              {group.label}
-            </span>
-            <div className="flex flex-col gap-4">
-              {group.items.map((item, j) => (
-                <div key={j} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900 leading-snug mb-0.5">
-                      {item.title}
-                    </p>
-                    <p className="text-xs text-slate-500 leading-relaxed">{item.detail}</p>
-                  </div>
-                </div>
-              ))}
+            <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-semibold text-slate-900 leading-snug mb-0.5">
+                {item.title}
+              </p>
+              <p className="text-xs text-slate-500 leading-relaxed">{item.detail}</p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Risk reduction block */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-7 md:p-8 mb-8 shadow-sm">
+      {/* Risk reduction */}
+      <div className="bg-teal-50 border border-teal-100 rounded-2xl p-6 md:p-7 mb-8">
         <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center mt-0.5">
-            <ShieldCheck className="w-5 h-5 text-teal-600" />
+          <div className="flex-shrink-0 w-9 h-9 rounded-lg bg-white border border-teal-200 flex items-center justify-center mt-0.5 shadow-sm">
+            <ShieldCheck className="w-4.5 h-4.5 text-teal-600 w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-base font-bold text-slate-900 mb-3">{riskReduction.headline}</h3>
-            <div className="flex flex-col gap-2 mb-4">
+            <h3 className="text-sm font-bold text-teal-900 mb-2">{riskReduction.headline}</h3>
+            <div className="flex flex-col gap-1.5 mb-2">
               {riskReduction.body.map((para, i) => (
-                <p key={i} className="text-sm text-slate-600 leading-relaxed">{para}</p>
+                <p key={i} className="text-sm text-teal-800 leading-relaxed">{para}</p>
               ))}
             </div>
             <p className="text-sm text-teal-700 font-medium">{riskReduction.reassurance}</p>
@@ -75,33 +52,20 @@ export function DeliverablesSection() {
         </div>
       </div>
 
-      {/* Micro-commitment prompt */}
-      <div className="text-center mb-8">
-        <p className="text-base text-slate-500 mb-3">{deliverables.microCommitment.label}</p>
-        <a
-          href={THINKIFIC_URL}
-          className="inline-flex items-center justify-center bg-transparent hover:bg-teal-50 text-teal-700 border-2 border-teal-600 hover:border-teal-700 font-semibold px-8 py-3.5 rounded-xl transition-all text-sm"
-        >
-          {deliverables.microCommitment.button}
-        </a>
-      </div>
-
       {/* Price panel */}
       <div className="bg-gradient-to-br from-slate-900 to-teal-900 rounded-2xl p-8 md:p-10 shadow-xl">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          {/* Price info */}
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-teal-300 mb-2">
               {deliverables.priceLabel}
             </p>
             <p className="text-6xl font-bold text-white mb-2 leading-none">{deliverables.price}</p>
-            <p className="text-teal-200 text-sm mb-1">{deliverables.priceSubNote}</p>
+            <p className="text-teal-200 text-sm">{deliverables.priceSubNote}</p>
             <p className="text-slate-500 text-xs mt-3 max-w-xs leading-relaxed">
               {deliverables.guarantee}
             </p>
           </div>
 
-          {/* CTA stack */}
           <div className="flex flex-col gap-3 w-full md:w-auto md:min-w-[260px]">
             <a
               href={THINKIFIC_URL}
@@ -111,9 +75,9 @@ export function DeliverablesSection() {
             </a>
             <a
               href={THINKIFIC_URL}
-              className="w-full text-center bg-transparent hover:bg-white/10 text-white/80 hover:text-white border border-white/25 hover:border-white/50 font-medium px-8 py-3.5 rounded-xl transition-all text-sm"
+              className="w-full text-center text-white/70 hover:text-white font-medium text-sm transition-colors text-center"
             >
-              View Full Program Details
+              View full program details
             </a>
             <p className="text-slate-400 text-xs text-center">{deliverables.urgencyLine}</p>
           </div>

@@ -31,7 +31,6 @@ export function Navbar() {
 
   return (
     <>
-      {/* Desktop sticky nav */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
@@ -40,7 +39,6 @@ export function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
-          {/* Brand */}
           <a
             href="#hero"
             onClick={(e) => handleNavClick(e, "#hero")}
@@ -49,7 +47,6 @@ export function Navbar() {
             {BRAND_NAME}
           </a>
 
-          {/* Desktop links */}
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
@@ -63,15 +60,13 @@ export function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
           <a
             href={THINKIFIC_URL}
             className="hidden md:inline-flex items-center justify-center bg-teal-700 hover:bg-teal-800 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm"
           >
-            Enroll Now
+            Start the Program
           </a>
 
-          {/* Mobile hamburger */}
           <button
             className="md:hidden p-2 rounded-md text-slate-600 hover:text-teal-700 hover:bg-slate-50 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -79,20 +74,13 @@ export function Navbar() {
             aria-expanded={menuOpen}
           >
             <div className="w-5 h-4 flex flex-col justify-between">
-              <span
-                className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-1.5" : ""}`}
-              />
-              <span
-                className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`}
-              />
-              <span
-                className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
-              />
+              <span className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-1.5" : ""}`} />
+              <span className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`block h-0.5 bg-current transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>
 
-        {/* Mobile dropdown */}
         {menuOpen && (
           <div className="md:hidden bg-white border-t border-slate-100 shadow-lg">
             <nav className="px-5 py-4 flex flex-col gap-3">
@@ -110,7 +98,7 @@ export function Navbar() {
                 href={THINKIFIC_URL}
                 className="mt-2 text-center bg-teal-700 hover:bg-teal-800 text-white text-sm font-semibold px-5 py-3 rounded-lg transition-colors"
               >
-                Enroll Now
+                Start the Program
               </a>
             </nav>
           </div>
@@ -123,7 +111,7 @@ export function Navbar() {
           href={THINKIFIC_URL}
           className="block w-full text-center bg-teal-700 hover:bg-teal-800 text-white text-base font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-md"
         >
-          Enroll Now — $997
+          Start the Program — $997
         </a>
       </div>
     </>

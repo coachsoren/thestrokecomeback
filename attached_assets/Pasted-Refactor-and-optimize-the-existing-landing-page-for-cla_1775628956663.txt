@@ -1,0 +1,203 @@
+Refactor and optimize the existing landing page for clarity, structure, and higher conversion.
+
+IMPORTANT:
+Do NOT rebuild from scratch.
+Modify the existing page.
+
+---
+
+## GOAL
+
+- Reduce repetition
+- Remove overlapping sections
+- Make structure clearer
+- Improve flow toward purchase
+- Keep tone professional, calm, and credible (medical-grade, not hype)
+
+---
+
+## 1. REMOVE DUPLICATE STRUCTURE
+
+Find and REMOVE the section called:
+"Complete Recovery System" (4 phases)
+
+Reason:
+We already explain phases in "Inside the Program"
+
+We must have ONLY ONE phase-based structure.
+
+---
+
+## 2. IMPROVE "INSIDE THE PROGRAM" SECTION
+
+Rename section to:
+
+"A clear, step-by-step recovery structure"
+
+Add subtext under title:
+
+"This program is structured into clear phases — each one building on the last, so you always know what to focus on next."
+
+---
+
+## 3. CONNECT PHASES TO CHAPTERS
+
+For EACH phase, add a line at the bottom:
+
+Example:
+
+Phase 1: Foundation  
+(description)
+
+Add:
+"Includes Chapters 1–4"
+
+Do this for all phases.
+
+Goal:
+Connect structure (phases) with real content (chapters)
+
+---
+
+## 4. REMOVE CONTENT REPETITION
+
+Scan entire page and:
+
+- Remove repeated mentions of:
+  - “clear structure”
+  - “guidance”
+  - “step-by-step”
+  - “understanding”
+
+Keep strongest version only.
+
+Reduce text by ~20% overall without losing meaning.
+
+---
+
+## 5. SIMPLIFY "WHAT’S INCLUDED"
+
+Find section with:
+- Video lessons
+- Audio lessons
+- Worksheets
+- Calls
+
+Replace with:
+
+Headline:
+"Everything you need to follow the program"
+
+Bullet list:
+- Structured video lessons for each phase  
+- Audio versions for flexible learning  
+- Worksheets to track your progress  
+- Weekly live calls for guidance  
+
+Remove any duplicate sections describing the same thing.
+
+---
+
+## 6. FIX CTA CONSISTENCY
+
+Use ONE primary CTA across the page:
+
+"Start the Program"
+
+Update:
+- buttons
+- sticky CTA
+- all sections
+
+Secondary version allowed in sticky:
+"Start the Program — $997"
+
+Remove other variations like:
+- Enroll now
+- Join now
+
+---
+
+## 7. IMPROVE FINAL SECTION (CRITICAL)
+
+Replace final CTA section with:
+
+Headline:
+"You’ve tried to figure this out on your own.  
+Now you have a clear plan to follow."
+
+Add text:
+
+"Rehab gives you a starting point.  
+But what comes after is often unclear — and that’s where many people get stuck.
+
+This program is built to give you structure, clarity, and a path forward you can actually follow."
+
+---
+
+Add "What happens next" block:
+
+- Get instant access  
+- Start with Phase 1 today  
+- Follow a clear daily structure  
+- Join your first live session  
+
+---
+
+CTA:
+"Start the Program"
+
+Add subline under button:
+"Know exactly what to do, starting tomorrow."
+
+---
+
+## 8. MOVE DISCLAIMER
+
+Find medical disclaimer near CTA.
+
+Move it:
+- to footer OR
+- make it visually smaller and less dominant
+
+Do NOT place it directly before purchase CTA.
+
+---
+
+## 9. IMPROVE FLOW
+
+Ensure page follows this order:
+
+1. Problem  
+2. Understanding  
+3. Solution  
+4. Structure (phases)  
+5. Proof  
+6. Offer  
+7. Decision  
+
+Remove any sections that repeat earlier information.
+
+---
+
+## 10. VISUAL CLEANUP
+
+- Increase spacing between sections
+- Reduce text blocks
+- Improve readability on mobile
+- Make sections feel lighter and easier to scan
+
+---
+
+## RESULT
+
+The page should feel:
+
+- clearer
+- shorter (even if still long)
+- more structured
+- easier to understand
+- easier to say YES to
+
+Do NOT add hype or aggressive sales language.
+Keep everything calm, professional, and trustworthy.
