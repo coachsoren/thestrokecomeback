@@ -1,0 +1,174 @@
+Create a new static subpage called program.html for The Stroke Comeback Protocol.
+
+IMPORTANT:
+- Static webpage only
+- No React
+- No Vite
+- No Node
+- No app framework
+- Use only HTML, CSS, and JS if needed
+- Keep the same design language as the homepage:
+  - same colors
+  - same typography
+  - same spacing
+  - same premium and medically credible tone
+  - same mobile-first responsiveness
+
+GOAL:
+This page is for visitors who want a more detailed overview before buying.
+It should feel like a premium “Program Details” page, not like a backend course catalog.
+
+CREATE THIS PAGE STRUCTURE:
+
+1. HERO
+Headline:
+"Full Program Overview"
+
+Subheadline:
+"A complete 12-week guided home recovery program designed to help stroke survivors continue making progress after formal rehabilitation."
+
+Supporting line:
+"Clear structure. Real-world application. Built for life after rehab."
+
+Buttons:
+- Primary: Start the Program
+- Secondary: Back to Home
+
+Primary CTA should point to the purchase link placeholder:
+#purchase-link
+
+Secondary CTA should point to:
+index.html
+
+2. AT A GLANCE
+Create a clean stats section with:
+- 12 structured weeks
+- 20 chapters
+- 100 guided lessons
+- 12 live group calls
+- Lifetime access
+- Complements medical care
+
+3. INTRO
+Short section:
+"This page is for those who want to see exactly how the program is structured before enrolling."
+
+4. PROGRAM STRUCTURE
+Headline:
+"How the program is structured"
+
+Intro text:
+"The program is organized into 6 clear phases, each building on the last."
+
+Create 6 phase cards using this exact structure:
+
+Phase 1: Understanding Stroke & Your Recovery
+Includes Chapters 1–3
+Description:
+Build a clear understanding of what changed after stroke, why recovery can feel inconsistent, and what the brain is trying to relearn.
+
+Phase 2: How the Brain Relearns
+Includes Chapters 4–6
+Description:
+Learn how neuroplasticity works in practice and how to apply it through repetition, movement, and targeted recovery strategies.
+
+Phase 3: The Challenges Nobody Prepares You For
+Includes Chapters 7–10
+Description:
+Address the hidden barriers that often slow progress, including fatigue, emotional impact, and cognitive overload.
+
+Phase 4: Rebuilding Movement & Daily Function
+Includes Chapters 11–14
+Description:
+Focus on practical recovery in everyday life, including movement, mobility, communication, coordination, and function.
+
+Phase 5: The Overlooked Recovery Factors
+Includes Chapters 15–17
+Description:
+Explore key areas many programs under-emphasize, including nutrition, swallowing, sensory systems, and body awareness.
+
+Phase 6: Tools, Strength & Long-Term Progress
+Includes Chapters 18–20
+Description:
+Turn recovery into a sustainable long-term system with strength, support tools, and practical methods for continued progress.
+
+5. DEEPER PROGRAM BREAKDOWN
+Headline:
+"What you’ll explore inside"
+
+Under this, create 6 grouped content blocks matching the 6 phases above.
+
+For each content block:
+- short subheadline
+- 2–3 sentence explanation
+- 3–5 concise bullets inspired by the course themes
+
+IMPORTANT:
+Do NOT dump all 20 chapter names in one long list.
+Make it readable, useful, and sales-oriented.
+
+6. WHAT THIS ACTUALLY MEANS FOR YOU
+Headline:
+"What this actually means for you"
+
+Bullets:
+- You stop guessing what to focus on
+- You understand why progress happens or stalls
+- You follow a structured path instead of scattered advice
+- You build more confidence in everyday recovery
+- You create consistency at home
+- You leave with a system you can continue using
+
+7. WHAT’S INCLUDED
+Create 3 premium cards:
+
+Guidance
+- 12 weekly live group calls
+- Recorded sessions
+- Clear weekly structure
+
+Content
+- Video lessons
+- Audio lessons
+- Worksheets and PDFs
+- Practical walkthroughs
+
+Support
+- Email support
+- Lifetime access
+- Future updates included
+
+8. CTA SECTION
+Headline:
+"See the full structure. Follow it with confidence."
+
+Text:
+"If you’ve been looking for a clear next step after rehab, this program is designed to give you one."
+
+Buttons:
+- Start the Program
+- Back to Home
+
+9. FOOTER
+Use the same footer style as the homepage.
+
+MENU UPDATE:
+Update the hamburger menu on both index.html and program.html to this exact structure:
+- Home → index.html
+- Program → program.html
+- About → index.html#about
+- FAQ → index.html#faq
+
+Keep CTA button in menu:
+- Start the Program
+
+TECHNICAL:
+- Create program.html
+- Reuse existing CSS where possible
+- Add any small CSS/JS needed for this page
+- Keep everything static and publishable in Replit
+
+At the end:
+1. confirm program.html was created
+2. confirm the menu was updated
+3. list all changed files
