@@ -148,6 +148,61 @@ export const whyDifferent = {
     "The stroke-damaged brain isn't broken — it's hungry for guidance. Every rep, every step, every movement is a signal for rewiring.",
 };
 
+// ---- RECOVERY SYSTEM SECTION ----
+export const recoverySystem = {
+  headline: "A Complete Stroke Recovery System",
+  subtext: "Built from 20 structured modules designed to guide you step by step.",
+  blocks: [
+    {
+      number: "01",
+      title: "Understanding What Happened",
+      description:
+        "Build the foundation by understanding what is actually happening in your brain and body.",
+      modules: [
+        "The brain and stroke explained",
+        "The hidden crisis behind symptoms",
+        "The science of recovery",
+      ],
+    },
+    {
+      number: "02",
+      title: "Rebuilding Core Functions",
+      description: "Regain control over your body, thinking, and daily function.",
+      modules: [
+        "Movement and mobility",
+        "Speech and communication",
+        "Cognitive recovery",
+        "Fatigue and energy",
+      ],
+    },
+    {
+      number: "03",
+      title: "The Invisible Challenges",
+      description:
+        "Understand and navigate the challenges most rehab programs don't address.",
+      modules: [
+        "Emotional regulation",
+        "Pain and sensory changes",
+        "Vision and perception",
+      ],
+    },
+    {
+      number: "04",
+      title: "Advanced Recovery and Long-Term Growth",
+      description: "Go beyond recovery — build long-term progress and independence.",
+      modules: [
+        "Strength and daily independence",
+        "Neuroplasticity tools and recovery strategies",
+        "Heat therapy and recovery boosters",
+        "Music and brain stimulation",
+        "Long-term recovery planning",
+        "Learning and skill development",
+      ],
+    },
+  ],
+  closingNote: "20 structured chapters  •  100 guided lessons  •  Video, audio, and practical walkthroughs",
+};
+
 // ---- WHO IT'S FOR SECTION ----
 export const whoItsFor = {
   headline: "Who this is for",
