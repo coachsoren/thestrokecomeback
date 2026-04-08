@@ -1,0 +1,242 @@
+Update the existing page program.html for “The Stroke Comeback Protocol”.
+
+IMPORTANT:
+- DO NOT create a new page
+- Modify the existing program.html
+- Keep this a static site (no React, no Vite, no backend)
+- Reuse existing styles, layout, and design system
+- Keep branding consistent with index.html
+- Keep it clean, premium, mobile-first
+
+GOAL:
+Transform the page from a raw course curriculum into a clear, structured, premium “system overview”.
+
+---
+
+### 1. CLEAN UP CURRENT CONTENT
+
+- Remove or simplify the current long Thinkific-style curriculum listing
+- Do NOT show all lessons or duplicate items like:
+  - audio discussion
+  - quiz
+  - presentation
+- Only show chapter-level structure
+
+---
+
+### 2. HERO SECTION (UPDATE)
+
+Title:
+“The Complete Stroke Recovery System”
+
+Subtitle:
+“A full 12-week guided program designed to support recovery across the most important functions affected by stroke.”
+
+Add stats row:
+- 12 weeks
+- 20 chapters
+- 100 lessons
+- Lifetime access
+
+CTA:
+- Start the Program — $997
+- Back to Home (index.html)
+
+---
+
+### 3. INTRO TEXT
+
+Add short intro:
+
+“This page gives you a clear overview of how the full recovery system is structured — and what each part is designed to help you rebuild.”
+
+---
+
+### 4. RESTRUCTURE INTO 8 SYSTEMS (CRITICAL)
+
+Replace the current structure with grouped sections.
+
+DO NOT invent new content.
+Use existing chapter titles but group them.
+
+---
+
+#### SYSTEM 1 — Foundation
+- Chapter 1: The Brain Under Siege — Understanding Stroke
+- Chapter 2: The Science of Recovery
+
+Short description:
+Understand what happened and how recovery actually works.
+
+---
+
+#### SYSTEM 2 — Invisible Struggles
+- Chapter 3: Post-Stroke Fatigue
+- Chapter 4: Emotional Scars
+
+Description:
+Address hidden challenges that slow recovery.
+
+---
+
+#### SYSTEM 3 — Core Functions
+- Chapter 5: Speech
+- Chapter 6: Movement
+- Chapter 7: Swallowing
+- Chapter 8: Vision
+- Chapter 9: Pain
+
+Description:
+Rebuild essential physical and functional systems.
+
+---
+
+#### SYSTEM 4 — Brain & Cognition
+- Chapter 10: Cognitive Rehab
+- Chapter 11: Emotional Regulation
+
+Description:
+Improve thinking, focus, and emotional control.
+
+---
+
+#### SYSTEM 5 — Long-Term Recovery
+- Chapter 12: The Long Game
+- Chapter 13: Strength
+
+Description:
+Create sustainable progress and real-life function.
+
+---
+
+#### SYSTEM 6 — Advanced Methods
+- Chapter 14: Crawling
+- Chapter 15: Nootropics
+- Chapter 16: Sauna
+
+Description:
+Advanced techniques to support recovery.
+
+---
+
+#### SYSTEM 7 — Practical Application
+- Chapter 17: Recovery Strategies
+- Chapter 18: Self Evaluation
+
+Description:
+Turn knowledge into action.
+
+---
+
+#### SYSTEM 8 — Lifestyle & Enhancement
+- Chapter 19: Music Therapy
+- Chapter 20: Learning
+
+Description:
+Support long-term brain growth and recovery.
+
+---
+
+### 5. DESIGN OF THESE SECTIONS
+
+Each system should be:
+- a clean card or section block
+- clear title
+- short description
+- list of included chapters
+
+Optional:
+- collapsible sections (accordion style)
+
+---
+
+### 6. ADD “WHAT YOU’LL WORK ON” SECTION
+
+Add a section translating the program into real-world benefits:
+
+Examples:
+- understanding stroke and recovery
+- managing fatigue and emotional load
+- improving speech and communication
+- rebuilding movement and coordination
+- handling pain and sensory issues
+- strengthening cognition and focus
+- building long-term recovery habits
+
+Keep it simple and readable.
+
+---
+
+### 7. ADD “WHAT’S INCLUDED” SECTION
+
+3 columns/cards:
+
+Guidance:
+- 12 live group calls
+- structured weekly approach
+
+Content:
+- video lessons
+- audio discussions
+- worksheets / memory charts
+
+Support:
+- email support
+- lifetime access
+- updates included
+
+---
+
+### 8. CTA STRUCTURE
+
+Add CTA after 2–3 sections:
+“Start the Program — $997”
+
+Final CTA at bottom:
+“Join the Full 12-Week Recovery System”
+
+---
+
+### 9. MENU (SYNC WITH INDEX)
+
+Ensure same menu as index:
+
+- Home → index.html
+- How It Works → index.html#how-it-works
+- Program → program.html
+- What You Get → index.html#what-you-get
+- FAQ → index.html#faq
+
+Keep bottom CTA button:
+Start the Program
+
+---
+
+### 10. REMOVE “COURSE FEEL”
+
+Replace wording like:
+- course
+- curriculum
+
+With:
+- system
+- program
+- recovery system
+
+---
+
+### 11. FINAL RESULT
+
+The page should:
+- feel structured and premium
+- be easy to scan
+- not overwhelm
+- clearly show the full system
+- increase trust and conversion
+
+---
+
+At the end:
+- confirm program.html was updated (not created)
+- list which sections were removed and added
+- confirm navigation works

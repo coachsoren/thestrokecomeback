@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Full Program Overview — The Stroke Comeback Protocol</title>
-  <meta name="description" content="A complete 12-week guided home recovery program designed to help stroke survivors continue making progress after formal rehabilitation." />
+  <title>The Complete Stroke Recovery System — The Stroke Comeback Protocol</title>
+  <meta name="description" content="A full 12-week guided program designed to support recovery across the most important functions affected by stroke. See all 8 recovery systems and 20 chapters." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -26,6 +26,21 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .system-body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease, opacity 0.25s ease;
+      opacity: 0;
+    }
+    .system-body.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+    .system-item.open .system-icon-plus  { display: none; }
+    .system-item.open .system-icon-minus { display: block; }
+    .system-icon-minus { display: none; }
+  </style>
 </head>
 <body class="bg-white font-sans antialiased text-slate-900">
 
@@ -37,8 +52,9 @@
     </a>
     <nav class="hidden lg:flex items-center gap-6">
       <a href="index.html"          class="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium">Home</a>
+      <a href="index.html#solution" class="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium">How It Works</a>
       <a href="program.html"        class="text-sm text-teal-700 font-semibold border-b border-teal-600 pb-px">Program</a>
-      <a href="index.html#founder"  class="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium">About</a>
+      <a href="index.html#deliverables" class="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium">What You Get</a>
       <a href="index.html#faq"      class="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium">FAQ</a>
     </nav>
     <a href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
@@ -56,13 +72,17 @@
          class="text-base font-medium text-slate-800 hover:text-teal-700 py-3 border-b border-slate-100 transition-colors">
         Home
       </a>
+      <a href="index.html#solution"
+         class="text-base font-medium text-slate-800 hover:text-teal-700 py-3 border-b border-slate-100 transition-colors">
+        How It Works
+      </a>
       <a href="program.html"
          class="text-base font-semibold text-teal-700 py-3 border-b border-slate-100">
         Program
       </a>
-      <a href="index.html#founder"
+      <a href="index.html#deliverables"
          class="text-base font-medium text-slate-800 hover:text-teal-700 py-3 border-b border-slate-100 transition-colors">
-        About
+        What You Get
       </a>
       <a href="index.html#faq"
          class="text-base font-medium text-slate-800 hover:text-teal-700 py-3 border-b border-slate-100 transition-colors">
@@ -82,7 +102,7 @@
 <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 px-4 py-3 shadow-lg">
   <a href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
      class="block w-full text-center bg-teal-700 hover:bg-teal-800 text-white text-base font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-md">
-    Start the Program — $997
+    Start the Program &mdash; $997
   </a>
 </div>
 
@@ -97,26 +117,45 @@
   <div class="relative max-w-4xl mx-auto text-center">
     <div class="inline-flex items-center gap-2.5 mb-8 justify-center">
       <div class="w-6 h-px bg-teal-600"></div>
-      <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">Program Details</span>
+      <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">Recovery System Overview</span>
       <div class="w-6 h-px bg-teal-600"></div>
     </div>
 
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.08] mb-6">
-      Full Program Overview
+    <h1 class="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold tracking-tight text-slate-900 leading-[1.08] mb-6">
+      The Complete Stroke Recovery System
     </h1>
 
-    <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-4">
-      A complete 12-week guided home recovery program designed to help stroke survivors continue making progress after formal rehabilitation.
+    <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-10">
+      A full 12-week guided program designed to support recovery across the most important functions affected by stroke.
     </p>
 
-    <p class="text-base text-slate-500 font-medium mb-10">
-      Clear structure. Real-world application. Built for life after rehab.
-    </p>
+    <!-- Stats row -->
+    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-10 py-6 border-y border-slate-100">
+      <div class="text-center">
+        <p class="text-2xl font-extrabold text-teal-700 leading-none">12</p>
+        <p class="text-xs text-slate-500 font-medium mt-1">weeks</p>
+      </div>
+      <div class="w-px h-8 bg-slate-200 hidden sm:block"></div>
+      <div class="text-center">
+        <p class="text-2xl font-extrabold text-teal-700 leading-none">20</p>
+        <p class="text-xs text-slate-500 font-medium mt-1">chapters</p>
+      </div>
+      <div class="w-px h-8 bg-slate-200 hidden sm:block"></div>
+      <div class="text-center">
+        <p class="text-2xl font-extrabold text-teal-700 leading-none">100+</p>
+        <p class="text-xs text-slate-500 font-medium mt-1">lessons</p>
+      </div>
+      <div class="w-px h-8 bg-slate-200 hidden sm:block"></div>
+      <div class="text-center">
+        <p class="text-2xl font-extrabold text-teal-700 leading-none">&infin;</p>
+        <p class="text-xs text-slate-500 font-medium mt-1">lifetime access</p>
+      </div>
+    </div>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
          class="inline-flex items-center justify-center bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-4 rounded-xl transition-colors shadow-lg text-base w-full sm:w-auto">
-        Start the Program
+        Start the Program &mdash; $997
       </a>
       <a href="index.html"
          class="inline-flex items-center justify-center border border-slate-300 hover:border-teal-600 text-slate-700 hover:text-teal-700 font-semibold px-8 py-4 rounded-xl transition-colors text-base w-full sm:w-auto">
@@ -126,300 +165,298 @@
   </div>
 </section>
 
-<!-- ===================== AT A GLANCE ===================== -->
-<section class="py-16 md:py-20 px-5 md:px-8 bg-white border-y border-slate-100">
-  <div class="max-w-5xl mx-auto">
-    <p class="text-center text-xs font-semibold uppercase tracking-[0.18em] text-teal-700 mb-10">At a glance</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-
-      <div class="text-center">
-        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">12</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">Structured<br class="hidden md:block"> weeks</p>
-      </div>
-
-      <div class="text-center">
-        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">20</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">Program<br class="hidden md:block"> chapters</p>
-      </div>
-
-      <div class="text-center">
-        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">100+</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">Guided<br class="hidden md:block"> lessons</p>
-      </div>
-
-      <div class="text-center">
-        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">12</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">Live group<br class="hidden md:block"> calls</p>
-      </div>
-
-      <div class="text-center">
-        <p class="text-xl md:text-2xl font-extrabold text-teal-700 tracking-tight mt-1">Lifetime</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">Access<br class="hidden md:block"> included</p>
-      </div>
-
-      <div class="text-center">
-        <p class="text-xl md:text-2xl font-extrabold text-teal-700 tracking-tight mt-1">Designed</p>
-        <p class="text-sm text-slate-500 font-medium mt-1 leading-snug">to complement<br class="hidden md:block"> medical care</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- ===================== INTRO ===================== -->
-<section class="py-14 md:py-16 px-5 md:px-8 bg-slate-50">
+<section class="py-12 md:py-14 px-5 md:px-8 bg-slate-50 border-y border-slate-100">
   <div class="max-w-2xl mx-auto text-center">
     <p class="text-lg md:text-xl text-slate-700 leading-relaxed">
-      This page is for those who want to see exactly how the program is structured before enrolling.
+      This page gives you a clear overview of how the full recovery system is structured &mdash; and what each part is designed to help you rebuild.
     </p>
   </div>
 </section>
 
-<!-- ===================== PROGRAM STRUCTURE ===================== -->
+<!-- ===================== 8 SYSTEMS ACCORDION ===================== -->
 <section class="py-16 md:py-24 px-5 md:px-8 bg-white">
-  <div class="max-w-5xl mx-auto">
+  <div class="max-w-3xl mx-auto">
 
-    <div class="text-center mb-14">
+    <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2.5 mb-5 justify-center">
         <div class="w-6 h-px bg-teal-600"></div>
-        <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">6 phases</span>
+        <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">8 recovery systems</span>
         <div class="w-6 h-px bg-teal-600"></div>
       </div>
-      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">How the program is structured</h2>
-      <p class="text-lg text-slate-500 max-w-xl mx-auto">The program is organized into 6 clear phases, each building on the last.</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">What the program covers</h2>
+      <p class="text-base text-slate-500 max-w-xl mx-auto leading-relaxed">20 chapters grouped into 8 systems. Each system addresses a distinct area of recovery. Click any system to see what's inside.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="flex flex-col gap-3" id="systems-list">
 
-      <!-- Phase 1 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 1</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 1–3</span>
+      <!-- System 1 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">01</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Foundation</p>
+              <p class="text-sm text-slate-500 mt-0.5">Understand what happened and how recovery actually works.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 1: The Brain Under Siege &mdash; Understanding Stroke</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 2: The Science of Recovery</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">Understanding Stroke &amp; Your Recovery</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Build a clear understanding of what changed after stroke, why recovery can feel inconsistent, and what the brain is trying to relearn.</p>
       </div>
 
-      <!-- Phase 2 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 2</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 4–6</span>
+      <!-- System 2 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">02</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Invisible Struggles</p>
+              <p class="text-sm text-slate-500 mt-0.5">Address hidden challenges that slow recovery down.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 3: Post-Stroke Fatigue</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 4: Emotional Scars</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">How the Brain Relearns</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Learn how neuroplasticity works in practice and how to apply it through repetition, movement, and targeted recovery strategies.</p>
       </div>
 
-      <!-- Phase 3 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 3</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 7–10</span>
+      <!-- System 3 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">03</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Core Functions</p>
+              <p class="text-sm text-slate-500 mt-0.5">Rebuild essential physical and functional systems.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 5: Speech</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 6: Movement</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 7: Swallowing</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 8: Vision</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 9: Pain</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">The Challenges Nobody Prepares You For</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Address the hidden barriers that often slow progress, including fatigue, emotional impact, and cognitive overload.</p>
       </div>
 
-      <!-- Phase 4 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 4</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 11–14</span>
+      <!-- System 4 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">04</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Brain &amp; Cognition</p>
+              <p class="text-sm text-slate-500 mt-0.5">Improve thinking, focus, and emotional control.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 10: Cognitive Rehabilitation</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 11: Emotional Regulation</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">Rebuilding Movement &amp; Daily Function</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Focus on practical recovery in everyday life, including movement, mobility, communication, coordination, and function.</p>
       </div>
 
-      <!-- Phase 5 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 5</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 15–17</span>
+      <!-- System 5 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">05</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Long-Term Recovery</p>
+              <p class="text-sm text-slate-500 mt-0.5">Create sustainable progress and real-life function.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 12: The Long Game</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 13: Strength</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">The Overlooked Recovery Factors</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Explore key areas many programs under-emphasize, including nutrition, swallowing, sensory systems, and body awareness.</p>
       </div>
 
-      <!-- Phase 6 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-7 hover:border-teal-300 hover:shadow-md transition-all">
-        <div class="inline-flex items-center gap-2 mb-4">
-          <span class="bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Phase 6</span>
-          <span class="text-xs text-slate-400 font-medium">Chapters 18–20</span>
+      <!-- System 6 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">06</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Advanced Methods</p>
+              <p class="text-sm text-slate-500 mt-0.5">Evidence-informed techniques to support deeper recovery.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 14: Crawling</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 15: Nootropics</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 16: Sauna</span></div>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-slate-900 mb-3 leading-snug">Tools, Strength &amp; Long-Term Progress</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Turn recovery into a sustainable long-term system with strength, support tools, and practical methods for continued progress.</p>
+      </div>
+
+      <!-- System 7 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">07</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Practical Application</p>
+              <p class="text-sm text-slate-500 mt-0.5">Turn knowledge into consistent daily action.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 17: Recovery Strategies</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 18: Self-Evaluation</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- System 8 -->
+      <div class="system-item border border-slate-200 rounded-xl overflow-hidden bg-white transition-colors duration-200">
+        <button class="system-btn w-full flex items-center justify-between gap-5 px-6 py-5 text-left focus:outline-none hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 text-xs font-bold">08</span>
+            <div>
+              <p class="text-base font-semibold text-slate-900 leading-snug">Lifestyle &amp; Enhancement</p>
+              <p class="text-sm text-slate-500 mt-0.5">Support long-term brain growth and recovery.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+            <svg class="system-icon-plus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <svg class="system-icon-minus w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="system-body px-6 pb-6 pl-[4.5rem]">
+          <div class="border-t border-teal-100 pt-4 flex flex-col gap-2">
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 19: Music Therapy</span></div>
+            <div class="flex items-center gap-3"><span class="flex-shrink-0 w-5 h-5 rounded bg-teal-600 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-700">Chapter 20: Learning</span></div>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ===================== DEEPER BREAKDOWN ===================== -->
+<!-- ===================== INLINE CTA ===================== -->
+<section class="py-12 px-5 md:px-8 bg-teal-700">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="text-xl md:text-2xl font-bold text-white mb-6 leading-snug">Ready to start the full recovery system?</p>
+    <a href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
+       class="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-teal-800 font-bold px-10 py-4 rounded-xl transition-colors shadow-md text-base">
+      Start the Program &mdash; $997
+    </a>
+    <p class="mt-4 text-sm text-teal-200">You can start today and go at your own pace.</p>
+  </div>
+</section>
+
+<!-- ===================== WHAT YOU'LL WORK ON ===================== -->
 <section class="py-16 md:py-24 px-5 md:px-8 bg-slate-50">
-  <div class="max-w-4xl mx-auto">
-
-    <div class="text-center mb-14">
-      <div class="inline-flex items-center gap-2.5 mb-5 justify-center">
-        <div class="w-6 h-px bg-teal-600"></div>
-        <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">Inside the program</span>
-        <div class="w-6 h-px bg-teal-600"></div>
-      </div>
-      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">What you'll explore inside</h2>
-    </div>
-
-    <div class="space-y-8">
-
-      <!-- Block 1 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 1</span>
-          <h3 class="text-base font-bold text-slate-800">Making Sense of What Changed</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">Many stroke survivors leave rehab without a full picture of what actually happened neurologically, or why some days feel harder than others. This phase fills that gap — giving you a practical understanding of your own recovery so that the rest of the program makes sense.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Why recovery can feel unpredictable, and what that actually means</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">How the brain reorganizes itself after damage</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Setting realistic expectations without losing hope</span></li>
-        </ul>
-      </div>
-
-      <!-- Block 2 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 2</span>
-          <h3 class="text-base font-bold text-slate-800">Putting Neuroplasticity to Work</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">The word neuroplasticity gets used often, but rarely explained in a way you can act on. This phase translates the science into practical recovery methods — so you're not just doing exercises, you're understanding why they matter and how to get more out of every repetition.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">How repetition and consistency drive neurological change</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Movement strategies that support brain relearning</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">How to structure daily practice for maximum effect</span></li>
-        </ul>
-      </div>
-
-      <!-- Block 3 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 3</span>
-          <h3 class="text-base font-bold text-slate-800">The Barriers Nobody Talks About</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">Fatigue, emotional difficulty, and cognitive overload stop more recoveries than physical limitation does. This phase names them, explains them, and gives you tools to manage them — because understanding what's slowing you down is the first step to working around it.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Post-stroke fatigue and why it's different from ordinary tiredness</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Emotional changes after stroke and how to approach them</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Cognitive overload — what it is and how to reduce it</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Practical pacing strategies that protect your energy</span></li>
-        </ul>
-      </div>
-
-      <!-- Block 4 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 4</span>
-          <h3 class="text-base font-bold text-slate-800">Getting Back to Daily Life</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">Recovery isn't just about clinical milestones — it's about function. This phase focuses on the practical skills that affect your daily life: how you move around the house, communicate, coordinate, and rebuild the physical confidence that often takes the biggest hit after stroke.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Movement and mobility in everyday environments</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Communication strategies for survivors and caregivers</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Coordination and fine motor skill rebuilding</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Building independence in activities that matter most to you</span></li>
-        </ul>
-      </div>
-
-      <!-- Block 5 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 5</span>
-          <h3 class="text-base font-bold text-slate-800">Factors Most Programs Miss</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">Nutrition, swallowing, sensory changes, and body awareness all affect recovery — yet they rarely appear in standard stroke programs. This phase addresses each one directly, with practical guidance you can apply at home.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Nutritional considerations that support brain recovery</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Understanding swallowing changes after stroke</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Sensory system changes and how to work with them</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Body awareness strategies that support physical recovery</span></li>
-        </ul>
-      </div>
-
-      <!-- Block 6 -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-9">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-50 px-3 py-1 rounded-full">Phase 6</span>
-          <h3 class="text-base font-bold text-slate-800">Building for the Long Term</h3>
-        </div>
-        <p class="text-sm text-slate-500 leading-relaxed mb-5">The final phase shifts focus from learning to sustaining. You'll leave with a personal recovery system — a practical structure you can continue using long after the 12 weeks are complete, supported by strength work, community, and tools that grow with you.</p>
-        <ul class="space-y-2.5">
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Strength and conditioning methods adapted for stroke recovery</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Tools and aids that extend what you can do independently</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">How to maintain and build on your progress after the program ends</span></li>
-          <li class="flex items-start gap-3"><span class="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-teal-100 flex items-center justify-center"><svg viewBox="0 0 10 8" class="w-2 h-1.5" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg></span><span class="text-sm text-slate-600">Creating a recovery routine you can actually stick with</span></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================== WHAT THIS MEANS FOR YOU ===================== -->
-<section class="py-16 md:py-24 px-5 md:px-8 bg-white">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2.5 mb-5 justify-center">
         <div class="w-6 h-px bg-teal-600"></div>
-        <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">The outcome</span>
+        <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">Real-world outcomes</span>
         <div class="w-6 h-px bg-teal-600"></div>
       </div>
-      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">What this actually means for you</h2>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">What you'll work on</h2>
     </div>
 
-    <div class="space-y-4">
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You stop guessing what to focus on</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Understanding stroke and why recovery can feel unpredictable</p>
       </div>
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You understand why progress happens — or stalls</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Managing fatigue and emotional load after stroke</p>
       </div>
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You follow a structured path instead of scattered advice</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Improving speech and communication</p>
       </div>
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You build more confidence in everyday recovery</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Rebuilding movement and coordination</p>
       </div>
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You create consistency at home</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Handling pain and sensory changes</p>
       </div>
-      <div class="flex items-start gap-4 bg-slate-50 rounded-2xl px-6 py-5">
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200">
         <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
           <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
         </div>
-        <p class="text-slate-700 font-medium leading-snug">You leave with a system you can continue using</p>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Strengthening cognition and focus</p>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-2xl px-6 py-5 border border-slate-200 sm:col-span-2">
+        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5">
+          <svg viewBox="0 0 10 8" class="w-2.5 h-2" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4l2.5 2.5L9 1"/></svg>
+        </div>
+        <p class="text-slate-700 font-medium text-sm leading-snug">Building long-term recovery habits you can maintain independently</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== WHAT'S INCLUDED ===================== -->
-<section class="py-16 md:py-24 px-5 md:px-8 bg-slate-50">
+<section class="py-16 md:py-24 px-5 md:px-8 bg-white">
   <div class="max-w-5xl mx-auto">
-
-    <div class="text-center mb-14">
+    <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2.5 mb-5 justify-center">
         <div class="w-6 h-px bg-teal-600"></div>
         <span class="text-teal-700 text-xs font-semibold tracking-[0.18em] uppercase">Included</span>
@@ -430,9 +467,8 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- Guidance -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-8">
-        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5">
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8">
+        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5 border border-teal-100">
           <svg class="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slate-900 mb-4">Guidance</h3>
@@ -443,23 +479,21 @@
         </ul>
       </div>
 
-      <!-- Content -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-8">
-        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5">
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8">
+        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5 border border-teal-100">
           <svg class="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slate-900 mb-4">Content</h3>
         <ul class="space-y-3">
           <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Video lessons</li>
-          <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Audio lessons</li>
-          <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Worksheets and PDFs</li>
+          <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Audio discussions</li>
+          <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Worksheets and memory charts</li>
           <li class="flex items-start gap-2.5 text-sm text-slate-600"><span class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-500 inline-block"></span>Practical walkthroughs</li>
         </ul>
       </div>
 
-      <!-- Support -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-8">
-        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5">
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8">
+        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-5 border border-teal-100">
           <svg class="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slate-900 mb-4">Support</h3>
@@ -479,21 +513,21 @@
   <div class="max-w-2xl mx-auto text-center">
     <div class="inline-flex items-center gap-2.5 mb-8 justify-center">
       <div class="w-6 h-px" style="background:rgba(94,234,212,0.5);"></div>
-      <span class="text-xs font-semibold tracking-[0.18em] uppercase" style="color:#5eead4;">Ready to start</span>
+      <span class="text-xs font-semibold tracking-[0.18em] uppercase" style="color:#5eead4;">Ready to begin</span>
       <div class="w-6 h-px" style="background:rgba(94,234,212,0.5);"></div>
     </div>
 
     <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-5 leading-tight">
-      See the full structure.<br>Follow it with confidence.
+      Join the Full 12-Week Recovery System
     </h2>
     <p class="text-lg mb-10 leading-relaxed" style="color:#94a3b8;">
-      If you've been looking for a clear next step after rehab, this program is designed to give you one.
+      Everything you need to move forward with clarity, structure, and real guidance — starting today.
     </p>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
       <a href="https://jorgen-s-site-0485.thinkific.com/products/courses/TheStrokeComebackProtocol"
          class="inline-flex items-center justify-center font-bold px-10 py-4 rounded-xl transition-colors shadow-xl text-base bg-teal-500 hover:bg-teal-400 text-white w-full sm:w-auto">
-        Start the Program
+        Start the Program &mdash; $997
       </a>
       <a href="index.html"
          class="inline-flex items-center justify-center font-semibold px-10 py-4 rounded-xl transition-colors text-base w-full sm:w-auto"
@@ -503,7 +537,7 @@
     </div>
 
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-      <span class="text-sm flex items-center gap-1.5" style="color:#94a3b8;"><span class="w-1 h-1 rounded-full bg-teal-500 inline-block"></span>12-week guided program</span>
+      <span class="text-sm flex items-center gap-1.5" style="color:#94a3b8;"><span class="w-1 h-1 rounded-full bg-teal-500 inline-block"></span>12-week guided recovery system</span>
       <span class="text-sm flex items-center gap-1.5" style="color:#94a3b8;"><span class="w-1 h-1 rounded-full bg-teal-500 inline-block"></span>Weekly live calls</span>
       <span class="text-sm flex items-center gap-1.5" style="color:#94a3b8;"><span class="w-1 h-1 rounded-full bg-teal-500 inline-block"></span>Lifetime access</span>
       <span class="text-sm flex items-center gap-1.5" style="color:#94a3b8;"><span class="w-1 h-1 rounded-full bg-teal-500 inline-block"></span>Complements medical care</span>
@@ -533,5 +567,36 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+(function () {
+  document.querySelectorAll('.system-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item   = btn.closest('.system-item');
+      var body   = item.querySelector('.system-body');
+      var isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.system-item.open').forEach(function (openItem) {
+        if (openItem === item) return;
+        openItem.classList.remove('open');
+        openItem.querySelector('.system-body').classList.remove('open');
+        openItem.style.borderColor = '';
+        openItem.querySelector('.system-btn').setAttribute('aria-expanded', 'false');
+      });
+
+      if (isOpen) {
+        item.classList.remove('open');
+        body.classList.remove('open');
+        item.style.borderColor = '';
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('open');
+        body.classList.add('open');
+        item.style.borderColor = '#99f6e4';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
