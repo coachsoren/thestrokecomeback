@@ -105,15 +105,6 @@ export function Navbar() {
         )}
       </header>
 
-      {/* Mobile sticky bottom CTA */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 px-4 py-3 shadow-lg">
-        <a
-          href={THINKIFIC_URL}
-          className="block w-full text-center bg-teal-700 hover:bg-teal-800 text-white text-base font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-md"
-        >
-          Start the Program — $997
-        </a>
-      </div>
     </>
   );
 }
