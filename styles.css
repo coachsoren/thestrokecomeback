@@ -87,6 +87,43 @@ main { padding-top: 0; }
   display: inline-block;
 }
 
+/* ── Hero responsive layout ── */
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 420px);
+  gap: 56px;
+  align-items: start;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-card {
+  min-width: 320px;
+  max-width: 420px;
+  width: 100%;
+}
+
+@media (max-width: 1279px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hero-card {
+    display: block;
+    min-width: 0;
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-card {
+    max-width: 100%;
+  }
+}
+
 /* ── Hero background image + overlay ── */
 #hero {
   background-image: url('hero.jpg');
