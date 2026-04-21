@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p dist/public && cp index.html program.html styles.css script.js dist/public/"
+    "build": "mkdir -p dist/public && cp index.html program.html styles.css script.js hero.jpg dist/public/"
   },
   "private": true
 }
