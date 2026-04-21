@@ -40,6 +40,35 @@ body { margin: 0; -webkit-font-smoothing: antialiased; }
 /* Prevent content from being covered by fixed navbar */
 main { padding-top: 0; }
 
+/* ── Problem section 2-column layout ── */
+.problem-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.problem-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .problem-section {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+    gap: 32px;
+  }
+  .problem-image {
+    margin-top: 4px;
+  }
+}
+
 /* ── Hero background image + overlay ── */
 #hero {
   background-image: url('hero.jpg');
