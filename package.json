@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p dist/public && cp index.html program.html styles.css script.js hero.jpg home-reflection.jpg logo.png dr-jorgen-sandell.jpg logo-figure.png dist/public/"
+    "build": "mkdir -p dist/public && cp index.html program.html styles.css script.js hero.jpg home-reflection.jpg logo.png dr-jorgen-sandell.jpg logo-figure.png og-image.png dist/public/"
   },
   "private": true
 }

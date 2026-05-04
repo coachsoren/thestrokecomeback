@@ -1,0 +1,110 @@
+Improve SEO, metadata, AI visibility, link structure, and conversion flow across the website without changing the design or layout.
+
+IMPORTANT:
+I have uploaded the OG image file named:
+
+og-image.png
+
+Use this image for Open Graph previews on both index.html and program.html.
+
+The correct OG image URL should be:
+
+https://thestrokecomeback.com/og-image.png
+
+1. Homepage SEO optimization index.html
+
+Update the title tag to:
+
+Lifetime Stroke Recovery After Rehab | The Stroke Comeback Protocol
+
+Update meta description to:
+
+A lifetime stroke recovery program with 12 weeks of dedicated support, expert guidance, neuroplasticity-based recovery tools, and lifetime access after formal rehab ends.
+
+Add proper Open Graph meta tags:
+
+og:title:
+Lifetime Stroke Recovery After Rehab | The Stroke Comeback Protocol
+
+og:description:
+A lifetime stroke recovery program with 12 weeks of dedicated support, expert guidance, neuroplasticity-based recovery tools, and lifetime access after formal rehab ends.
+
+og:image:
+https://thestrokecomeback.com/og-image.png
+
+Also add standard social preview tags if appropriate, including Twitter card metadata.
+
+Make sure the homepage is optimized for:
+
+Google SEO
+ChatGPT / AI search visibility
+LinkedIn sharing previews
+high-trust search results
+
+Do not change the design.
+Only improve metadata, structure, and discoverability.
+
+2. Program page SEO optimization program.html
+
+Keep the current design.
+
+Update or confirm:
+
+Title:
+Complete Stroke Recovery Program Details | The Stroke Comeback Protocol
+
+Meta description:
+Explore the full Stroke Comeback Protocol program: 20 chapters, 100+ lessons, 8 recovery systems, 12 weeks of guided support, and lifetime access for stroke recovery after rehab.
+
+Add proper Open Graph meta tags:
+
+og:title:
+Complete Stroke Recovery Program Details | The Stroke Comeback Protocol
+
+og:description:
+Explore the full Stroke Comeback Protocol program: 20 chapters, 100+ lessons, 8 recovery systems, 12 weeks of guided support, and lifetime access for stroke recovery after rehab.
+
+og:image:
+https://thestrokecomeback.com/og-image.png
+
+Also add standard social preview tags if appropriate, including Twitter card metadata.
+
+Make sure program.html has unique SEO metadata separate from the homepage.
+
+Do not change layout or design.
+
+3. CTA link update
+
+Update the CTA button link “Start the Program” and all enrollment CTA buttons across all pages to this URL:
+
+https://course.thestrokecomeback.com/order?ct=e3d34156-bee6-4184-b3dc-1e826fd87245
+
+Apply this on all homepage sections, program page sections, nav buttons, pricing boxes, final CTA areas, and any enrollment-related links.
+
+4. Support email update
+
+Change all instances of:
+
+[hello@thestrokecomeback.com](mailto:hello@thestrokecomeback.com)
+
+to:
+
+[support@thestrokecomeback.com](mailto:support@thestrokecomeback.com)
+
+Apply this across all pages, FAQ sections, contact sections, and footer sections.
+
+5. Preserve current design
+
+Do not redesign anything.
+Do not change layout.
+Do not alter visual style.
+Do not remove existing content.
+
+Only improve:
+metadata
+Open Graph/social preview setup
+CTA links
+email address
+discoverability
+trust signals
+conversion flow
