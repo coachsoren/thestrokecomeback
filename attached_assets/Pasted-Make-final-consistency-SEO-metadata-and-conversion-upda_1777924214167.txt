@@ -1,0 +1,298 @@
+Make final consistency, SEO, metadata, and conversion updates across index.html and program.html without changing the design or layout.
+
+This is a final polish pass for launch readiness.
+
+IMPORTANT:
+Do not redesign anything.
+Do not change layout.
+Do not change colors, spacing, typography, styling, sections, or visual structure.
+
+Only improve:
+
+* metadata consistency
+* URL consistency
+* CTA consistency
+* trust clarity
+* chapter/lesson accuracy
+* conversion flow
+
+---
+
+1. PROGRAM PAGE URL CONSISTENCY
+
+---
+
+The live program page uses this clean public URL:
+
+https://thestrokecomeback.com/program
+
+Update any metadata references that still use:
+
+https://thestrokecomeback.com/program.html
+
+Change them to:
+
+https://thestrokecomeback.com/program
+
+Apply this especially to:
+
+* canonical URL
+* og:url
+* any social metadata references
+
+Do not break internal navigation.
+Keep internal links working correctly.
+
+---
+
+2. STANDARDIZE ALL PROGRAM QUANTITY REFERENCES
+
+---
+
+The correct program structure is:
+
+21 chapters
+101 lessons
+
+Chapter 21 is:
+
+The Stroke Recovery Roadmap
+
+with:
+
+Your tool to tailor your Stroke Recovery Roadmap
+
+Replace all older references such as:
+
+20 chapters
+100+ lessons
+
+with:
+
+21 chapters
+101 lessons
+
+Apply this everywhere across both pages, including:
+
+* hero sections
+* at-a-glance stat cards
+* trust sections
+* pricing sections
+* program overview sections
+* CTA sections
+* feature summaries
+* supporting copy
+* footer references if applicable
+* metadata descriptions
+* Open Graph descriptions
+* Twitter descriptions
+
+Everything must match exactly.
+
+---
+
+3. PURCHASE CTA STANDARDIZATION
+
+---
+
+Use the same primary purchase CTA wording across all purchase sections:
+
+Start Secure Enrollment
+
+Replace variations like:
+
+* Continue to Secure Enrollment
+* Start the Program
+* Join the Program
+* Get Lifetime Access
+
+with:
+
+Start Secure Enrollment
+
+Keep pricing references like $997 where appropriate.
+
+---
+
+4. PURCHASE CTA LINKS
+
+---
+
+Update ALL purchase/enrollment CTA buttons to use ONLY this permanent Thinkific product page URL:
+
+https://course.thestrokecomeback.com/products/courses/TheStrokeComebackProtocol
+
+Apply this to:
+
+* hero section purchase CTA
+* pricing section CTA
+* final enrollment CTA sections
+* Start the Program buttons
+* Enroll Now buttons
+* Continue to Secure Enrollment buttons
+* Join the Program buttons
+* Get Lifetime Access buttons
+* all purchase-related buttons
+
+Do NOT use temporary checkout links like:
+
+order?ct=...
+
+Only use the stable product page URL above.
+
+---
+
+5. INFORMATIONAL CTA LINKS
+
+---
+
+Buttons for information should NOT go to checkout.
+
+Examples:
+
+* View Full Program Details
+* See What’s Inside the Program
+* Learn More
+* Explore the Program
+
+These should only link to:
+
+https://thestrokecomeback.com/program
+
+or the correct internal program page.
+
+Do NOT send informational buttons to Thinkific checkout.
+
+---
+
+6. TRUST MESSAGE UNDER PURCHASE CTA
+
+---
+
+Under all primary purchase CTA buttons, use this exact text:
+
+You’ll continue to our secure private course platform to complete enrollment.
+
+This should be visually subtle, elegant, and consistent across all purchase sections.
+
+Do not add this text under informational buttons.
+
+Keep supporting trust lines like:
+
+* Immediate access after purchase
+* Secure checkout via Thinkific
+
+where they fit naturally.
+
+---
+
+7. HOMEPAGE SEO METADATA
+
+---
+
+Keep homepage title:
+
+Lifetime Stroke Recovery After Rehab | The Stroke Comeback Protocol
+
+Update homepage meta description where needed so it reflects:
+
+21 chapters
+101 lessons
+
+while keeping strong SEO quality and current intent.
+
+Keep homepage optimized for:
+
+* Google SEO
+* ChatGPT / AI search visibility
+* LinkedIn sharing previews
+* high-trust search results
+
+---
+
+8. PROGRAM PAGE SEO METADATA
+
+---
+
+Keep program page title:
+
+Complete Stroke Recovery Program Details | The Stroke Comeback Protocol
+
+Update program page meta description to:
+
+Explore the full Stroke Comeback Protocol program: 21 chapters, 101 lessons, 8 recovery systems, 12 weeks of guided support, and lifetime access for stroke recovery after rehab.
+
+Update:
+
+* meta description
+* og:description
+* twitter:description
+
+so they all match this updated version.
+
+---
+
+9. OPEN GRAPH IMAGE
+
+---
+
+Use the uploaded image:
+
+og-image.png
+
+for both index.html and program.html.
+
+Use this exact URL:
+
+https://thestrokecomeback.com/og-image.png
+
+for:
+
+* og:image
+* twitter:image
+
+Keep all Open Graph and social preview metadata correctly configured for:
+
+* LinkedIn sharing
+* Facebook preview
+* Google trust signals
+* AI discoverability
+
+---
+
+10. SUPPORT EMAIL CONSISTENCY
+
+---
+
+Change all old references of:
+
+[hello@thestrokecomeback.com](mailto:hello@thestrokecomeback.com)
+
+to:
+
+[support@thestrokecomeback.com](mailto:support@thestrokecomeback.com)
+
+Apply across:
+
+* footer
+* FAQ
+* contact sections
+* support references
+
+---
+
+## FINAL GOAL
+
+Make the entire website feel fully consistent, premium, trustworthy, and launch-ready.
+
+Everything should feel aligned between:
+
+* homepage
+* program page
+* Thinkific product page
+* SEO metadata
+* Open Graph previews
+* trust messaging
+* enrollment flow
+
+without changing the visual design.
