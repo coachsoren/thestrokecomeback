@@ -1,0 +1,71 @@
+Update the landing page for The Stroke Comeback Protocol with these conversion-focused improvements:
+GOAL: Reduce CTA overload, improve trust, and make the path to purchase clearer before redirecting users to Thinkific checkout.
+MAIN CHANGES:
+1. REDUCE CTA BUTTONS
+Keep only these main CTA flows:
+A) HERO SECTION Keep:
+* Primary CTA: “Start the Program — $997”
+* Secondary CTA: “View Full Program Details”
+Change button text from: “See What's Inside the Program” to: “View Full Program Details”
+B) MID-PAGE CTA SECTION Currently there are too many repeated CTA buttons.
+Replace duplicate CTA sections so that each section has only ONE clear decision.
+For the middle CTA section: Use only ONE main CTA button: “Continue to Secure Enrollment”
+Remove the duplicate secondary CTA there.
+C) PRICING / FINAL CONVERSION BOX Keep:
+* Main CTA button only
+Change button text from: “Start the Program” to: “Start Secure Enrollment”
+Keep “View Full Program Details” as small supporting text only, not as a competing button.
+D) TOP NAV CTA Keep:
+* “Start the Program”
+No need for additional repeated purchase buttons everywhere.
+IMPORTANT RULE: One section = one decision. Avoid CTA overload.
+
+2. IMPROVE TRUST + PURCHASE CONFIDENCE (especially in the final pricing box)
+Update the pricing section to include stronger trust messaging.
+Keep:
+* One-Time Investment
+* $997
+* Lifetime access
+* No subscription
+Add these trust lines:
+* Secure checkout via Thinkific
+* Immediate access after purchase
+* Lifetime access to all future updates
+* Educational content grounded in clinical practice
+* Complements medical care, not a replacement
+If applicable, also include:
+* 7-Day Satisfaction Guarantee
+Use stronger wording:
+Replace: “If you enroll and the program is not right for you…”
+with:
+“7-Day Satisfaction Guarantee If the program is not the right fit, contact us within 7 days of enrollment.”
+
+3. EXPLAIN THE THINKIFIC REDIRECT
+Before checkout, clearly explain:
+“When you click Start Secure Enrollment, you’ll be safely redirected to our official course platform hosted on Thinkific, where enrollment and payment are completed securely. You receive immediate access after purchase.”
+This should reduce friction and confusion when users leave the landing page.
+
+4. FOOTER IMPROVEMENT
+Improve footer trust slightly by including:
+* The Stroke Comeback Protocol
+* Contact email
+* Educational content disclaimer: “Educational content only — not individual medical advice.”
+* Copyright line
+Keep it clean and premium, not corporate-heavy.
+
+5. CONTACT SECTION
+Add a small trust-based contact section (simple and elegant, not large)
+Example:
+Questions before joining?
+Feel free to reach out directly.
+Dr. Jörgen Sandell Clinician & Scientist in Neurological Recovery jorgen@thestrokecomeback.com
+This should feel reassuring and premium.
+
+6. PROGRAM PAGE (/program)
+Apply the same CTA philosophy there: fewer buttons, clearer hierarchy, stronger trust.
+Keep:
+* Primary path = secure enrollment
+* Secondary path = information only
+Avoid too many repeated CTA blocks.
+Make the page feel premium, clear, and conversion-focused.
+Do not redesign everything. Improve structure, clarity, and trust while keeping the current design style and visual identity.
