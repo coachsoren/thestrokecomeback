@@ -90,9 +90,9 @@ main { padding-top: 0; }
 /* ── Hero responsive layout ── */
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 420px);
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: 1fr minmax(300px, 380px);
+  gap: 80px;
+  align-items: center;
 }
 
 .hero-copy {
@@ -100,20 +100,18 @@ main { padding-top: 0; }
 }
 
 .hero-card {
-  min-width: 320px;
-  max-width: 420px;
   width: 100%;
+  max-width: 380px;
 }
 
-@media (max-width: 1279px) {
+/* Switch to single-column below 1400px so buttons never crowd the card */
+@media (max-width: 1399px) {
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 32px;
   }
   .hero-card {
-    display: block;
-    min-width: 0;
-    max-width: 720px;
+    max-width: 680px;
     width: 100%;
   }
 }
