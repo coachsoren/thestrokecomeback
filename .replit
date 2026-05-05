@@ -1,49 +1,21 @@
-modules = ["nodejs-24", "python-3.11"]
+modules = ["python-3.11"]
 
-[[artifacts]]
-id = "artifacts/api-server"
+  [deployment]
+  deploymentTarget = "static"
+  publicDir = "."
 
-[[artifacts]]
-id = "artifacts/mockup-sandbox"
+  [workflows]
+  runButton = "Static Webpage"
 
-[deployment]
-router = "application"
-deploymentTarget = "static"
-publicDir = "dist/public"
-build = ["sh", "-c", "npm run build"]
+  [[workflows.workflow]]
+  name = "Static Webpage"
+  author = "agent"
 
-[deployment.postBuild]
-args = ["pnpm", "store", "prune"]
-env = { "CI" = "true" }
+  [[workflows.workflow.tasks]]
+  task = "shell.exec"
+  args = "python3 -m http.server ${PORT:-3000}"
+  waitForPort = 3000
 
-[workflows]
-runButton = "Project"
-
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Static Webpage"
-
-[[workflows.workflow]]
-name = "Static Webpage"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python3 -m http.server ${PORT:-3000}"
-waitForPort = 3000
-
-[workflows.workflow.metadata]
-outputType = "webview"
-
-[agent]
-stack = "PNPM_WORKSPACE"
-expertMode = true
-
-[postMerge]
-path = "scripts/post-merge.sh"
-timeoutMs = 20000
+  [workflows.workflow.metadata]
+  outputType = "webview"
+  
