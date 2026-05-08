@@ -1,0 +1,70 @@
+We need to add the included 1-hour personal onboarding call more clearly as a sales USP on both the homepage/index page and the program page.
+
+Important:
+The site is currently back to the working version. Do not redesign the page. Do not change the hero structure. Do not change global spacing. Do not move major sections. Avoid any overlap, especially around the “At a glance” card.
+
+Core message:
+The program includes a 1-hour personal onboarding call.
+During the call, we review the participant’s situation/case, answer questions, and help them understand what to focus on first.
+The goal is to make the buyer feel safe, guided, and confident before starting.
+
+Required updates:
+
+1. Homepage / index page
+Add this clearly as a sales USP near the hero CTA or in the hero/support area, but without overlapping existing cards or changing the main layout.
+
+Use a compact highlighted note/card/badge, for example:
+“1-hour personal onboarding call included”
+“Review your situation, ask questions, and get clear guidance on what to focus on first.”
+
+This must be visible early on the homepage, not hidden far down the page.
+
+2. Program page – Recovery System Overview stats/USP row
+In the top overview area where it currently shows:
+- 12 weeks of support
+- 21 chapters
+- 101 lessons
+- lifetime access
+
+Add one more USP:
+“1:1 onboarding call”
+
+Make sure the layout remains clean and responsive.
+If 5 items are too tight on desktop or mobile, adjust the grid responsibly so it wraps nicely without overlap.
+
+3. Program page – What’s included section
+In the “Guided Support (12 weeks)” card, update the onboarding bullet.
+
+Change weak wording like:
+“Personal onboarding call to get you oriented”
+
+To:
+“1-hour personal onboarding call”
+
+Add or adjust supporting text if the design allows:
+“A 1:1 session where we review your situation, answer your questions, and help you focus on what matters first.”
+
+Keep it concise and visually consistent with the current card style.
+
+4. Program page – “What the 12 weeks include” box
+There is already a Personal onboarding call item here. Improve the copy.
+
+Use:
+“Personal onboarding call”
+“A 1:1 onboarding call where we review your situation, answer your questions, and help you focus on what to prioritize first.”
+
+5. CTA language
+Do not change every CTA globally.
+Only if there is a suitable CTA near the onboarding message, it may say:
+“Start With Personal Guidance”
+But do not force this everywhere.
+
+Technical/layout requirements:
+- Minimum necessary edits only.
+- Do not add absolute-positioned elements.
+- Do not place text inside fragile hero overlay containers.
+- Preserve current responsive behavior.
+- Test desktop and mobile spacing.
+- Make sure the “At a glance” box does not overlap anything.
+- Make sure the new USP is clearly visible on both index and program page.
+- After the edit, summarize exactly which files and sections were changed.
