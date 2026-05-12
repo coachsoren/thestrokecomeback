@@ -1,0 +1,144 @@
+The previous changes were good — now we need 3 important upgrades to make the page stronger for conversion and trust.
+
+Please update the REAL index.html file (not just preview).
+
+==================================================
+1. ADD “1-HOUR PERSONAL ONBOARDING CALL” IN 2 MORE SECTIONS
+==================================================
+
+We already mention the onboarding call in several places, but we need stronger consistency.
+
+A) Section:
+"Everything you need to follow the program"
+
+Update the intro/subheadline so it clearly says that everything starts with:
+
+“A private 1-hour onboarding call with Dr. Sandell”
+
+This should explain that the purpose is:
+- personal guidance
+- clarity on where to begin
+- understanding the individual situation
+- helping the participant start the right way from day one
+
+It should feel premium, personal, and trust-building.
+
+NOT salesy.
+Professional and high-value.
+
+Example direction:
+“Before the program begins, every participant starts with a private 1-hour onboarding call with Dr. Sandell to review your situation, answer questions, and help you focus on the right starting point for your recovery.”
+
+Also add this clearly as one of the included deliverables/cards in this section.
+
+--------------------------------------------------
+
+B) Section:
+“How this works”
+
+Add a separate step/card for:
+
+“1-hour personal onboarding call”
+
+Explain:
+- private 1:1 session
+- personal coaching
+- clarity before starting
+- helping them avoid overwhelm and guesswork
+
+This should make the onboarding feel like the natural first step of the program.
+
+==================================================
+2. FAQ SECTION — FIX + BETTER ANSWERS
+==================================================
+
+Current issue:
+The FAQ questions exist, but answers are weak / not optimized.
+
+We need:
+
+A) Make FAQ #1 OPEN by default (expanded automatically)
+
+B) Move current FAQ #7:
+
+“Why would I pay for this when there is free information online?”
+
+UP to become FAQ #2
+
+C) Make FAQ #2 OPEN by default as well
+
+D) Improve the answer significantly.
+
+This answer should be excellent and high-converting.
+
+It should explain:
+
+- Free information online is fragmented and overwhelming
+- Most people don’t need more information, they need structure
+- This is a complete system, not random advice
+- It includes expert guidance + weekly live calls + lifetime access
+- One single investment that supports recovery for life
+- It helps avoid wasting months or years on trial and error
+- It is designed specifically for stroke recovery after rehab
+
+Tone:
+Professional, intelligent, premium, trustworthy.
+NOT pushy.
+NOT “sales copy”.
+Should feel obvious and logical.
+
+Strong direction example:
+
+“Most people don’t struggle because information is unavailable — they struggle because it is scattered, contradictory, and difficult to turn into daily action.
+
+This program gives you structure, sequencing, and expert guidance in one place.
+
+Instead of spending months trying to piece together free advice, you get a complete recovery framework designed specifically for stroke survivors after rehab.
+
+It is a one-time investment with lifetime access — something you can return to for years, not just weeks.
+
+For many people, avoiding wasted time and uncertainty is far more valuable than the price itself.”
+
+Make this answer excellent.
+
+==================================================
+3. PRICE SECTION — ADD VALUE COMPARISON FOR $997
+==================================================
+
+Current issue:
+$997 is presented clearly, but without context.
+
+We need a short high-trust value comparison to help reframe the investment.
+
+Research-based direction:
+
+Private physical therapy sessions in the US often cost around $75–150+ per session without insurance, and specialized neurological rehab can be even more. :contentReference[oaicite:0]{index=0}
+
+Use this idea naturally without sounding pushy.
+
+Good examples:
+- less than a few private rehabilitation sessions
+- less than the cost of several months of private physiotherapy
+- often less than what many spend trying to figure recovery out alone
+
+I want YOU to write the best version.
+
+Tone:
+premium
+calm
+credible
+not salesy
+
+This should make $997 feel like a serious but very reasonable long-term investment.
+
+==================================================
+IMPORTANT
+==================================================
+
+Do NOT just show preview.
+
+Actually edit and save index.html.
+
+After editing:
+confirm exactly what sections were changed
+and confirm the FAQ open-state behavior works correctly.
