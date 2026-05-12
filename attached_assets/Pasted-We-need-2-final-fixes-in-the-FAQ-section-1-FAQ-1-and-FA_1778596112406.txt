@@ -1,0 +1,72 @@
+We need 2 final fixes in the FAQ section.
+
+1. FAQ #1 and FAQ #2 must be OPEN by default
+
+Right now they still require clicking the + icon.
+
+This is wrong.
+
+I want:
+- FAQ #1 open automatically when the page loads
+- FAQ #2 (“Why would I pay for this when there is free information online?”) also open automatically when the page loads
+
+Both answers should be visible immediately without clicking.
+
+Please make sure:
+- the accordion still works normally for all questions
+- plus/minus icons display correctly
+- FAQ #1 and FAQ #2 are both expanded by default on page load
+
+This likely requires updating script.js, not only HTML.
+
+--------------------------------------------------
+
+2. Improve FAQ #2 answer — shorter, clearer, stronger
+
+Current answer is too long and too vague.
+
+I want it shorter, sharper, and more conversion-focused.
+
+The message should clearly communicate:
+
+- This is not random free information from the internet
+- This is a complete structured recovery system
+- It includes:
+   • private 1-hour onboarding call with Dr. Sandell
+   • personal coaching to start correctly
+   • 12 weeks of live support
+   • all lessons, tools, and lifetime access
+
+- It is one single investment
+- It supports recovery for life
+- It helps avoid wasting months or years trying to figure everything out alone
+
+Tone:
+Professional
+Premium
+Trustworthy
+Clear
+Not salesy
+Not too long
+
+Much stronger and easier to understand.
+
+Use a stronger answer like this direction:
+
+“Free information online is often scattered, inconsistent, and difficult to turn into real progress.
+
+This program gives you one complete recovery system — starting with a private 1-hour onboarding call with Dr. Sandell, followed by 12 weeks of live support, structured lessons, practical tools, and lifetime access to everything.
+
+Instead of spending months trying to piece recovery together alone, you get a clear path forward from day one.
+
+It is one investment — built to support recovery for life.”
+
+You can improve this even more if needed.
+
+--------------------------------------------------
+
+Important:
+Actually update the files, not preview only.
+
+After finishing:
+confirm FAQ #1 and FAQ #2 are both open by default.
