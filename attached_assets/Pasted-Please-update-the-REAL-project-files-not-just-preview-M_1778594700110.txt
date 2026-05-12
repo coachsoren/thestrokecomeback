@@ -1,0 +1,84 @@
+Please update the REAL project files, not just preview. Most likely this means index.html and possibly script.js if needed.
+
+We need 3 upgrades:
+
+1. Add the 1-hour personal onboarding call in 2 more places
+
+A) In the section “Everything you need to follow the program”
+Update the intro/subheadline so it clearly explains that every participant starts with a private 1-hour onboarding call with Dr. Sandell.
+
+The message should explain:
+- personal guidance
+- reviewing the participant’s situation
+- answering questions
+- helping them start in the right place
+- reducing overwhelm and guesswork
+
+Tone: premium, calm, trustworthy, not salesy.
+
+Also add this onboarding call as one of the included deliverables/cards in that section.
+
+B) In the section “How this works”
+Add a separate card/step for:
+“1-hour personal onboarding call”
+
+Explain that it is a private 1:1 session with Dr. Sandell for personal coaching, clarity, and getting started the right way.
+
+It should feel like the natural first step of the program.
+
+2. Fix and improve the FAQ section
+
+Important:
+The FAQ answers may already exist in index.html, but the accordion does not seem to work correctly on the live page. When clicking the plus icon, the answer is not shown.
+
+Please inspect both index.html and script.js.
+
+Fix the FAQ accordion functionality so:
+- clicking a FAQ question opens/closes the answer correctly
+- the plus/minus icon changes correctly
+- FAQ #1 is open by default
+- the current question “Why would I pay for this when there is free information online?” is moved up to become FAQ #2
+- FAQ #2 is also open by default
+
+Improve the answer for the “free information online” question.
+
+The answer should explain:
+- free information is scattered, fragmented, and often overwhelming
+- most people do not need more information — they need structure
+- this is a complete recovery system, not random advice
+- it includes expert guidance, weekly live calls, and lifetime access
+- it is a one-time investment that supports recovery for life
+- it helps avoid wasting months or years on trial and error
+- it is designed specifically for stroke survivors after rehab
+
+Write the answer in a professional, premium, intelligent tone. Not pushy. Not exaggerated.
+
+Suggested direction:
+“Most people don’t struggle because information is unavailable — they struggle because it is scattered, contradictory, and difficult to turn into daily action. This program gives you structure, sequencing, and expert guidance in one place. Instead of spending months trying to piece together free advice, you get a complete recovery framework designed specifically for stroke survivors after rehab. It is a one-time investment with lifetime access — something you can return to for years, not just weeks.”
+
+Make it even better if you can.
+
+3. Add value context to the $997 price section
+
+The price section is clean, but $997 needs more context.
+
+Add a short, credible comparison near the price that reframes the investment.
+
+Do not make medical claims.
+Do not be pushy.
+Do not sound like hype.
+
+Use a careful line such as:
+“Less than the cost of several private rehabilitation sessions — with lifetime access, weekly support, and a personal onboarding call included.”
+
+Or write a better version with the same meaning.
+
+The goal is to make the price feel like a serious but reasonable long-term recovery investment.
+
+Important:
+- Actually edit and save the files
+- Do not remove existing design/style
+- Keep the tone professional and trustworthy
+- After editing, confirm which files were changed
+- Confirm that the FAQ accordion works
+- Confirm that FAQ #1 and FAQ #2 are open by default

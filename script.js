@@ -47,7 +47,6 @@
       var target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
-      // Close mobile menu if open
       if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
         mobileMenu.classList.add("hidden");
         iconMenu.classList.remove("hidden");
@@ -61,11 +60,22 @@
   });
 
   /* ── FAQ accordion ── */
+  function openFaqItem(item) {
+    if (!item) return;
+    var answer    = item.querySelector(".faq-answer");
+    var iconPlus  = item.querySelector(".icon-plus");
+    var iconMinus = item.querySelector(".icon-minus");
+    item.classList.add("open");
+    item.querySelector(".faq-btn").setAttribute("aria-expanded", "true");
+    answer.classList.add("open");
+    if (iconPlus)  iconPlus.classList.add("hidden");
+    if (iconMinus) iconMinus.classList.remove("hidden");
+  }
+
   document.querySelectorAll(".faq-btn").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var item    = btn.closest(".faq-item");
       var answer  = item.querySelector(".faq-answer");
-      var icon    = item.querySelector(".faq-icon");
       var iconPlus  = item.querySelector(".icon-plus");
       var iconMinus = item.querySelector(".icon-minus");
       var isOpen  = item.classList.contains("open");
@@ -73,7 +83,7 @@
       // Close all others
       document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
         if (openItem === item) return;
-        var otherAnswer = openItem.querySelector(".faq-answer");
+        var otherAnswer    = openItem.querySelector(".faq-answer");
         var otherIconPlus  = openItem.querySelector(".icon-plus");
         var otherIconMinus = openItem.querySelector(".icon-minus");
         openItem.classList.remove("open");
@@ -90,13 +100,14 @@
         if (iconPlus)  iconPlus.classList.remove("hidden");
         if (iconMinus) iconMinus.classList.add("hidden");
       } else {
-        item.classList.add("open");
-        btn.setAttribute("aria-expanded", "true");
-        answer.classList.add("open");
-        if (iconPlus)  iconPlus.classList.add("hidden");
-        if (iconMinus) iconMinus.classList.remove("hidden");
+        openFaqItem(item);
       }
     });
   });
+
+  // Open FAQ #1 and #2 by default
+  var faqItems = document.querySelectorAll(".faq-item");
+  openFaqItem(faqItems[0]);
+  openFaqItem(faqItems[1]);
 
 })();
